@@ -1,0 +1,4 @@
+The operations that you can do with {{api_name}} are:
+
+{{#operations}} 
+{{.}} {{/operations}}

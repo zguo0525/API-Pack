@@ -1,0 +1,36 @@
+{
+    "list": [
+        {
+            "API name": "1Forge Finance APIs",
+            "functionality": "Get quotes for all symbols",
+            "description": "Get quotes",
+            "endpoint": "",
+            "output": "Could you please provide an illustration of how I can retrieve quotes for various financial symbols using the 1Forge Finance APIs?",
+            "output to refine": "Give me an example of how to get quotes for all symbols with the 1Forge Finance APIs."
+        },
+        {
+            "API name": "1Forge Finance APIs",
+            "functionality": "Get quotes for all symbols",
+            "description": "Get quotes",
+            "endpoint": "",
+            "output": "Could you please provide instructions on how to retrieve quotes using the 1Forge Finance APIs?",
+            "output to refine": "I need to get quotes with the 1Forge Finance APIs. Please help me with that."
+        },
+        {
+            "API name": "1Forge Finance APIs",
+            "functionality": "Get a list of symbols for which we provide real-time quotes",
+            "description": "Symbol List",
+            "endpoint": "",
+            "output": "Could you help me obtain a list of symbols eligible for real-time quotes using the 1Forge Finance APIs?",
+            "output to refine": "Please tell me how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs."
+        },
+        {
+            "API name": "1Forge Finance APIs",
+            "functionality": "Get a list of symbols for which we provide real-time quotes",
+            "description": "Symbol List",
+            "endpoint": "",
+            "output": "Could you provide guidance on how to obtain a list of symbols supported for real-time quotes using the 1Forge Finance APIs?",
+            "output to refine": "I need to symbol list with the 1Forge Finance APIs. Please help me with that."
+        }
+    ]
+}

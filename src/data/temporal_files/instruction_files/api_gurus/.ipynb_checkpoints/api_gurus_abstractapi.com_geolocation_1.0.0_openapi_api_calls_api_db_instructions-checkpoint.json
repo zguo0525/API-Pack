@@ -1,0 +1,538 @@
+[
+    {
+        "api_call": "curl --request GET \\\n  --url 'https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone'",
+        "api_name": "IP geolocation API",
+        "api_provider": "abstractapi.com",
+        "endpoint": "",
+        "framework": "abstractapi.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Retrieve the location of an IP address",
+        "path": "/v1/",
+        "method": "get",
+        "lang": "cURL",
+        "domain": [],
+        "api_description": "Abstract IP geolocation API allows developers to retrieve the region, country and city behind any IP worldwide. The API covers the geolocation of IPv4 and IPv6 addresses in 180+ countries worldwide. Extra information can be retrieved like the currency, flag or language associated to an IP.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you please provide me with that data?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you please provide me with that data?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.005641823130449
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Can you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Can you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.011808327162347
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Could you please help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Could you please help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.041292336074834
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Could you please help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Could you please help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.041292336074834
+            },
+            {
+                "idx": 5,
+                "candidate": "Could you help me find the city and country information for a given IP address using the IP geolocation API?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nCould you help me find the city and country information for a given IP address using the IP geolocation API?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.85273831867121
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "Could you help me find the city and country information for a given IP address using the IP geolocation API?"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "IP geolocation API",
+        "api_provider": "abstractapi.com",
+        "endpoint": "",
+        "framework": "abstractapi.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Retrieve the location of an IP address",
+        "path": "/v1/",
+        "method": "get",
+        "lang": "Java",
+        "domain": [],
+        "api_description": "Abstract IP geolocation API allows developers to retrieve the region, country and city behind any IP worldwide. The API covers the geolocation of IPv4 and IPv6 addresses in 180+ countries worldwide. Extra information can be retrieved like the currency, flag or language associated to an IP.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Could you please provide me with that detail?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Could you please provide me with that detail?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0412060113267425
+            },
+            {
+                "idx": 2,
+                "candidate": "Could you find the city and country details for a given IP address using the IP geolocation API?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nCould you find the city and country details for a given IP address using the IP geolocation API?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.9133553385122744
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you please provide that detail for me?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you please provide that detail for me?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.9927118078954753
+            },
+            {
+                "idx": 4,
+                "candidate": "Could you find the city and country details for the given IP address using the IP geolocation API?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nCould you find the city and country details for the given IP address using the IP geolocation API?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.893065929309263
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "Could you find the city and country details for the given IP address using the IP geolocation API?"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {\n  method: 'GET',\n  url: 'https://ipgeolocation.abstractapi.com/v1/',\n  qs: {\n    api_key: 'SOME_STRING_VALUE',\n    ip_address: '195.154.25.40',\n    fields: 'country,city,timezone'\n  }\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "IP geolocation API",
+        "api_provider": "abstractapi.com",
+        "endpoint": "",
+        "framework": "abstractapi.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Retrieve the location of an IP address",
+        "path": "/v1/",
+        "method": "get",
+        "lang": "Node",
+        "domain": [],
+        "api_description": "Abstract IP geolocation API allows developers to retrieve the region, country and city behind any IP worldwide. The API covers the geolocation of IPv4 and IPv6 addresses in 180+ countries worldwide. Extra information can be retrieved like the currency, flag or language associated to an IP.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Can you provide that detail for me?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Can you provide that detail for me?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.9895913535945158
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0286739438323784
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0286739438323784
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Could you provide me with that detail?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Could you provide me with that detail?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0374847404173813
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Can you provide that detail for me?"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"ipgeolocation.abstractapi.com\")\n\nconn.request(\"GET\", \"/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "IP geolocation API",
+        "api_provider": "abstractapi.com",
+        "endpoint": "",
+        "framework": "abstractapi.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Retrieve the location of an IP address",
+        "path": "/v1/",
+        "method": "get",
+        "lang": "Python",
+        "domain": [],
+        "api_description": "Abstract IP geolocation API allows developers to retrieve the region, country and city behind any IP worldwide. The API covers the geolocation of IPv4 and IPv6 addresses in 180+ countries worldwide. Extra information can be retrieved like the currency, flag or language associated to an IP.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Could you help me find the city and country information for a given IP address using the IP geolocation API?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nCould you help me find the city and country information for a given IP address using the IP geolocation API?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.85273831867121
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0286739438323784
+            },
+            {
+                "idx": 4,
+                "candidate": "I want to find the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI want to find the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.90254709345028
+            },
+            {
+                "idx": 5,
+                "candidate": "Could you find the city and country information for a given IP address using the IP geolocation API, please?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nCould you find the city and country information for a given IP address using the IP geolocation API, please?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.876817605726873
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "Could you help me find the city and country information for a given IP address using the IP geolocation API?"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "IP geolocation API",
+        "api_provider": "abstractapi.com",
+        "endpoint": "",
+        "framework": "abstractapi.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Retrieve the location of an IP address",
+        "path": "/v1/",
+        "method": "get",
+        "lang": "go",
+        "domain": [],
+        "api_description": "Abstract IP geolocation API allows developers to retrieve the region, country and city behind any IP worldwide. The API covers the geolocation of IPv4 and IPv6 addresses in 180+ countries worldwide. Extra information can be retrieved like the currency, flag or language associated to an IP.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you provide me with that data?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you provide me with that data?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0063140539408963
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you provide me with that data?"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "IP geolocation API",
+        "api_provider": "abstractapi.com",
+        "endpoint": "",
+        "framework": "abstractapi.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Retrieve the location of an IP address",
+        "path": "/v1/",
+        "method": "get",
+        "lang": "Ruby",
+        "domain": [],
+        "api_description": "Abstract IP geolocation API allows developers to retrieve the region, country and city behind any IP worldwide. The API covers the geolocation of IPv4 and IPv6 addresses in 180+ countries worldwide. Extra information can be retrieved like the currency, flag or language associated to an IP.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Could you find the city and country details for a given IP address using the IP geolocation API?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nCould you find the city and country details for a given IP address using the IP geolocation API?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.9133553385122744
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.032094801842141
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0286739438323784
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "Could you find the city and country details for a given IP address using the IP geolocation API?"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "IP geolocation API",
+        "api_provider": "abstractapi.com",
+        "endpoint": "",
+        "framework": "abstractapi.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Retrieve the location of an IP address",
+        "path": "/v1/",
+        "method": "get",
+        "lang": "PHP",
+        "domain": [],
+        "api_description": "Abstract IP geolocation API allows developers to retrieve the region, country and city behind any IP worldwide. The API covers the geolocation of IPv4 and IPv6 addresses in 180+ countries worldwide. Extra information can be retrieved like the currency, flag or language associated to an IP.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Could you provide that data for me, please?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Could you provide that data for me, please?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.9994784247198374
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to find the city and country information for a given IP address using the IP geolocation API. Could you help me out?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find the city and country information for a given IP address using the IP geolocation API. Could you help me out?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.031069830625084
+            },
+            {
+                "idx": 3,
+                "candidate": "I want to find the city and country information for a given IP address using the IP geolocation API. Could you provide me with that detail?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI want to find the city and country information for a given IP address using the IP geolocation API. Could you provide me with that detail?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.8993145956194093
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            },
+            {
+                "idx": 5,
+                "candidate": "Could you find the city and country details for a given IP address using the IP geolocation API, please?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nCould you find the city and country details for a given IP address using the IP geolocation API, please?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.9066970080486056
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "I want to find the city and country information for a given IP address using the IP geolocation API. Could you provide me with that detail?"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "IP geolocation API",
+        "api_provider": "abstractapi.com",
+        "endpoint": "",
+        "framework": "abstractapi.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Retrieve the location of an IP address",
+        "path": "/v1/",
+        "method": "get",
+        "lang": "swift",
+        "domain": [],
+        "api_description": "Abstract IP geolocation API allows developers to retrieve the region, country and city behind any IP worldwide. The API covers the geolocation of IPv4 and IPv6 addresses in 180+ countries worldwide. Extra information can be retrieved like the currency, flag or language associated to an IP.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I want to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI want to find the city and country information for a given IP address using the IP geolocation API. Can you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.8987912498936375
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you please help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you please help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0177659203922524
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Can you provide me with that data?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Can you provide me with that data?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.007315417333347
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to find out where an IP address is located. Can you help me with that using the IP geolocation API?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out where an IP address is located. Can you help me with that using the IP geolocation API?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.99496351395862
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?",
+                "input_text": "Functionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to retrieve the location of an IP address with the IP geolocation API. Please help me with that.\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to find out the city and country information for a given IP address using the IP geolocation API. Could you help me with that?\n###Output:\nFunctionality: \nDescription: Retrieve the location of an IP address\nEndpoint: \nAPI: IP geolocation API",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -3.0148587405360696
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "I'd like to find out where an IP address is located. Can you help me with that using the IP geolocation API?"
+        }
+    }
+]

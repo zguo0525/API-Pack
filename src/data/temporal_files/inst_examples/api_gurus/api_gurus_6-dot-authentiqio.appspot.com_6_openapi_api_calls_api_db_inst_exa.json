@@ -1,0 +1,52 @@
+{
+    "list": [
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+            "endpoint": "key_bind",
+            "output": "Could you please assist me in updating my Authentiq ID using the Authentiq API? In version 4, I need to generate a JWT token by including 'sub', 'email', and 'phone' for email/phone hash binding. For version 5, I should perform a POST request to issue-sign email and phone scopes, followed by a PUT request to update registration with a new JWT token containing 'sub', 'pk', 'devtoken', and other necessary information.\n\nReference: <https://github.com/skion/authentiq/wiki/jwt-examples>",
+            "output to refine": "I need to update authentiq id by replacing the object.\n\nv4: `jwt(sub,email,phone)` to bind email/phone hash; \n\nv5: post issuer-signed email & phone scopes\nand put to update registration `jwt(sub, pk, devtoken, ...)`\n\nsee: https://github.com/skion/authentiq/wiki/jwt-examples\n with the Authentiq API. Please help me with that."
+        },
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+            "endpoint": "key_bind",
+            "output": "Could you provide an illustration of how to utilize the Authentiq API's key_bind endpoint for updating an Authentiq ID, incorporating v4 JWT with email and phone hashes, as well as v5's POST request with email & phone scopes and a PUT request for registration JWT update?",
+            "output to refine": "Please give me an example of how to use the endpoint key_bind from Authentiq API."
+        },
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+            "endpoint": "sign_update",
+            "output": "Could you please assist me in signing an existing JWT using the Authentiq API, as described on their wiki?",
+            "output to refine": "I need to authority updates a jwt with its signature\nsee: https://github.com/skion/authentiq/wiki/jwt-examples\n with the Authentiq API. Please help me with that."
+        },
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+            "endpoint": "sign_update",
+            "output": "Could you kindly provide an illustrative example of how to implement the Authentiq API's 'sign_update' functionality to update a JWT with its signature?",
+            "output to refine": "Please give me an example of how to use the endpoint sign_update from Authentiq API."
+        },
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "Revoke an Identity (Key) with a revocation secret",
+            "endpoint": "key_revoke",
+            "output": "Could you please guide me on how to revoke an identity (key) using a revocation secret in the Authentiq API?",
+            "output to refine": "I need to revoke an identity (key) with a revocation secret with the Authentiq API. Please help me with that."
+        },
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "Revoke an Identity (Key) with a revocation secret",
+            "endpoint": "key_revoke",
+            "output": "Could you please provide an example of how to revoke an identity (key) using the Authentiq API?",
+            "output to refine": "Please give me an example of how to use the endpoint key_revoke from Authentiq API."
+        }
+    ]
+}

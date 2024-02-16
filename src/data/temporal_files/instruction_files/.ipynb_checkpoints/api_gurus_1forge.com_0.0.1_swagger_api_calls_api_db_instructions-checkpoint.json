@@ -1,0 +1,1138 @@
+[
+    {
+        "api_call": "curl --request GET \\\n  --url https://1forge.com/forex-quotes/quotes",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "cURL",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "what is the symbol for london metal exchange?",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.0153872172037761,
+                "back_trans_input": "Task: what is the symbol for london metal exchange?\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Task\n\nTask: what is the symbol for london metal exchange?",
+                "back_trans_input_tokens_mean": -2.4919913300370746
+            },
+            {
+                "idx": 2,
+                "candidate": "get a quote for all symbols.1forge Finance APIs",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.7560905456542969,
+                "back_trans_input": "Task: get a quote for all symbols.1forge Finance APIs\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n*/\n\n\n// Endpoint ID: 1f8c6d5e-f7cc-",
+                "back_trans_input_tokens_mean": -2.506073230245839
+            },
+            {
+                "idx": 3,
+                "candidate": "Find all symbol prices for a company. Return the symbol names and price quotes.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.6335772346047794,
+                "back_trans_input": "Task: Find all symbol prices for a company. Return the symbol names and price quotes.\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Endpoint: https://docs.1forge.",
+                "back_trans_input_tokens_mean": -2.4660398165384927
+            },
+            {
+                "idx": 4,
+                "candidate": "What ad-supported web service is available for financial data, that can be used to create widgets",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -2.089049079201438,
+                "back_trans_input": "Task: What ad-supported web service is available for financial data, that can be used to create widgets\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n[https://api.1forge.com/finance](https://api.",
+                "back_trans_input_tokens_mean": -2.6380114051384655
+            },
+            {
+                "idx": 5,
+                "candidate": "Request all quotes for every symbol. The symbols in question should be the top 100 most used financial symbols on the",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.971375898881392,
+                "back_trans_input": "Task: Request all quotes for every symbol. The symbols in question should be the top 100 most used financial symbols on the\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": ". (https://1forge.com/finance)\n\n",
+                "back_trans_input_tokens_mean": -2.5379342507189655
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "get a quote for all symbols.1forge Finance APIs"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://1forge.com/forex-quotes/quotes\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Java",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "fnapi name get quotes for all symbols",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.4019820473410867,
+                "back_trans_input": "Task: fnapi name get quotes for all symbols\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n\nExample Response\n\n{\n    \"success\": true,\n    \"data\": [\n        {\n            \"",
+                "back_trans_input_tokens_mean": -2.511112996510097
+            },
+            {
+                "idx": 2,
+                "candidate": "get quotes for all symbols API: 1Forge Finance APIs",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.5221435257366726,
+                "back_trans_input": "Task: get quotes for all symbols API: 1Forge Finance APIs\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\nFunctionality: Get quote details by symbol\nDescription: Get quote details by symbol\nEndpoint: https://",
+                "back_trans_input_tokens_mean": -2.3032827540340586
+            },
+            {
+                "idx": 3,
+                "candidate": "Get quotes for all symbols. Name the API 1Forge Finance APIs",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.48758215457201004,
+                "back_trans_input": "Task: Get quotes for all symbols. Name the API 1Forge Finance APIs\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\nIdentifier: 1forge_getquotes\nFunctionality: getQuotes\nDescription: Get quotes for",
+                "back_trans_input_tokens_mean": -2.3050739384498917
+            },
+            {
+                "idx": 4,
+                "candidate": "Get quotes for all symbols.?I want to use 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.7616160379515754,
+                "back_trans_input": "Task: Get quotes for all symbols.?I want to use 1Forge Finance APIs.\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**You can find these details in the documentation.",
+                "back_trans_input_tokens_mean": -2.3818890752871176
+            },
+            {
+                "idx": 5,
+                "candidate": "a finance API that gives live real-time quotes for all symbols",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.679250717163086,
+                "back_trans_input": "Task: a finance API that gives live real-time quotes for all symbols\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n```bash\ncurl --location --request GET 'https://api.",
+                "back_trans_input_tokens_mean": -2.425198188194862
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "Get quotes for all symbols. Name the API 1Forge Finance APIs"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://1forge.com/forex-quotes/quotes'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Node",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: get_quotes_for_all_symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.07395239309831099,
+                "back_trans_input": "Task: Identifier: get_quotes_for_all_symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\nFor example, if your response was:\n\n```json\n{\n    \"identifier\": \"get",
+                "back_trans_input_tokens_mean": -2.4489402453104656
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: getAllSymsDescription: Get quotes Endpoint: API: 1For",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.532525593584234,
+                "back_trans_input": "Task: Identifier: getAllSymsDescription: Get quotes Endpoint: API: 1For\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\nIdentifier: getAllSymsFunctionality: Get quotesEndpoints:\n\nAPIs: 1",
+                "back_trans_input_tokens_mean": -2.5947172133648984
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: get_quotes_for_all_symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.07402575016021729,
+                "back_trans_input": "Task: Identifier: get_quotes_for_all_symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### 2. The Endpoint's Name Should Be Changed To Something Else Other Than The Given One",
+                "back_trans_input_tokens_mean": -2.4489402453104656
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: get-quotes-for-all-symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.15170663595199585,
+                "back_trans_input": "Task: Identifier: get-quotes-for-all-symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Task\n\nCreate a new file named endpoints_generator.",
+                "back_trans_input_tokens_mean": -2.457892068227132
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: get_all_quotes/finance, Get Function:get_all",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.1274679790843616,
+                "back_trans_input": "Task: Identifier: get_all_quotes/finance, Get Function:get_all\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note:** The API endpoint that we are using in our example belongs to the Forge Finance APIs.",
+                "back_trans_input_tokens_mean": -2.611440453647582
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "Identifier: get_quotes_for_all_symbols Description: Get"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"1forge.com\")\n\nconn.request(\"GET\", \"/forex-quotes/quotes\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Python",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "identifier: GET, functionality: Get quotes for all symbols, description",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.6847019344568253,
+                "back_trans_input": "Task: identifier: GET, functionality: Get quotes for all symbols, description\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n> **Note:** You can find the endpoints in the documentation or by using your own means.",
+                "back_trans_input_tokens_mean": -2.38165233277867
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: Get quotes for all symbols API: 1Forge Finance APIs Description: Get quotes",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.31386670199307526,
+                "back_trans_input": "Task: Identifier: Get quotes for all symbols API: 1Forge Finance APIs Description: Get quotes\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\nIdentifier: get_quotes_for_all_symbols\nEndpoint functionality: Get quotes for all",
+                "back_trans_input_tokens_mean": -2.3155488328235907
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: Get_Quotes, Functionality: Get quotes for all symbols, Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.483884106982838,
+                "back_trans_input": "Task: Identifier: Get_Quotes, Functionality: Get quotes for all symbols, Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### Endpoint 2\n\nIdentifier: Get_QuoteBySymbol\nEndpoint: Endpoint 3",
+                "back_trans_input_tokens_mean": -2.3229575450303126
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: get_quotes_for_all_symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.07397305965423584,
+                "back_trans_input": "Task: Identifier: get_quotes_for_all_symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note:**\n\nThe endpoint should match exactly what we have provided in terms of capital letters, spacing",
+                "back_trans_input_tokens_mean": -2.449366209904353
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: get_all_symbols, Description: Get quotes, API: 1",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.5686053091829474,
+                "back_trans_input": "Task: Identifier: get_all_symbols, Description: Get quotes, API: 1\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\nTask: Identifier: create_user, Description: Create user, API: 2\n\nFunction",
+                "back_trans_input_tokens_mean": -2.4037789731729227
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "Identifier: get_quotes_for_all_symbols Description: Get"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://1forge.com/forex-quotes/quotes\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "go",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: Get quotations; all symbols Description: Get quotes",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.244120979309082,
+                "back_trans_input": "Task: Identifier: Get quotations; all symbols Description: Get quotes\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n*/\n\n\n// Endpoint\nconst API_URL = \"https://api.",
+                "back_trans_input_tokens_mean": -2.6697519385296364
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: getquotesforallsymbols Description: Get quotes API: 1",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.20155030488967896,
+                "back_trans_input": "Task: Identifier: getquotesforallsymbols Description: Get quotes API: 1\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": " are versioned by major release. Each new major release will have its own endpoints, with the previous version continuing",
+                "back_trans_input_tokens_mean": -2.4601736147541646
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: get-quotes-for-all-symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.1515950235453519,
+                "back_trans_input": "Task: Identifier: get-quotes-for-all-symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### Task 2: Identifier: post-order Functionality:\n\nPost order Description: Post orders",
+                "back_trans_input_tokens_mean": -2.457892068227132
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: Get quotes for all symbols Description: Get quotes",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.3652775457927159,
+                "back_trans_input": "Task: Identifier: Get quotes for all symbols Description: Get quotes\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Task\n\n1. Open the file named `endpoints_data/endpoint2.",
+                "back_trans_input_tokens_mean": -2.4592617864194124
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: Get quotes for all symbols Description: Get quotes Endpoint: API: 1Forge Finance",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.15939728238365866,
+                "back_trans_input": "Task: Identifier: Get quotes for all symbols Description: Get quotes Endpoint: API: 1Forge Finance\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Input:** \n\n* Task string, \n* Functionality string, \n* Description string, \n*",
+                "back_trans_input_tokens_mean": -2.297348867416382
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "Identifier: Get quotes for all symbols Description: Get quotes Endpoint: API: 1Forge Finance"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://1forge.com/forex-quotes/quotes\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Ruby",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: get_quotes_for_all_symbols.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.36043357849121094,
+                "back_trans_input": "Task: Identifier: get_quotes_for_all_symbols.\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Example:\n```json\n{\n    \"identifier\": \"get_quotes_for_",
+                "back_trans_input_tokens_mean": -2.3337917489520574
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: get quotes for all symbols Description: Get quotes Endpoint: API: 1Forge Finance",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.24186429652300748,
+                "back_trans_input": "Task: Identifier: get quotes for all symbols Description: Get quotes Endpoint: API: 1Forge Finance\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Hint:** You can use any programming language as long as it supports HTTP requests",
+                "back_trans_input_tokens_mean": -2.3309997329711916
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: get_quotes_for_all_symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.07410676912827925,
+                "back_trans_input": "Task: Identifier: get_quotes_for_all_symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### Task ID: 5.0.",
+                "back_trans_input_tokens_mean": -2.448954093456268
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: getquotesforallsymbols Description: Get quotes API: 1",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.20144776864485306,
+                "back_trans_input": "Task: Identifier: getquotesforallsymbols Description: Get quotes API: 1\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": ": https://developer.coinbase.com/api/v2\n\n",
+                "back_trans_input_tokens_mean": -2.4601134820417925
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: get_quotes_for_all_symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.07406718080694025,
+                "back_trans_input": "Task: Identifier: get_quotes_for_all_symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": ".\n\n### Question 2 \n\n![Question 2](https://github.",
+                "back_trans_input_tokens_mean": -2.4491719086964925
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "Identifier: get_quotes_for_all_symbols Description: Get"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://1forge.com/forex-quotes/quotes\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "PHP",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: get_quotes_all_symbols Description: Get quotes API",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.19040652296759866,
+                "back_trans_input": "Task: Identifier: get_quotes_all_symbols Description: Get quotes API\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n(Optional) You can use your own code or any online tool like httpbin.",
+                "back_trans_input_tokens_mean": -2.441037718454997
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: get-quotes-for-all-symbols",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.36976656317710876,
+                "back_trans_input": "Task: Identifier: get-quotes-for-all-symbols\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### Endpoint\n\n**Identifier:** get-quotes-for-all-symbols\n\n**Function",
+                "back_trans_input_tokens_mean": -2.3035408737313032
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: get quotes for all symbols Description: Get quotes API: 1Forge Finance APIs",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.21297014301473444,
+                "back_trans_input": "Task: Identifier: get quotes for all symbols Description: Get quotes API: 1Forge Finance APIs\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": " Functionality: Get current price of BTC/USDT Description: Get current price of BTC/USDT End",
+                "back_trans_input_tokens_mean": -2.3328196052613297
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: get_quotes_for_all_symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.07405157522721724,
+                "back_trans_input": "Task: Identifier: get_quotes_for_all_symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\nEndpoint: \n\nIdentifier: get_quotes_for_all_symbols Functionality: Get",
+                "back_trans_input_tokens_mean": -2.4489402453104656
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: get_quotes_for_all_symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.07405157522721724,
+                "back_trans_input": "Task: Identifier: get_quotes_for_all_symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## 2.\n\nIn your own words, explain what a RESTful Web Service is?",
+                "back_trans_input_tokens_mean": -2.4489402453104656
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "Identifier: get_quotes_for_all_symbols Description: Get"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://1forge.com/forex-quotes/quotes\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "swift",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: #get-quotes-for-all-symbols Description:",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.46103269403631036,
+                "back_trans_input": "Task: Identifier: #get-quotes-for-all-symbols Description:\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Submitting Incomplete Solutions\nIt's possible to submit an incomplete solution so you can see",
+                "back_trans_input_tokens_mean": -2.3765989197187185
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: get-quotes-for-all-symbols Description: Retrieve",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.4155078855427829,
+                "back_trans_input": "Task: Identifier: get-quotes-for-all-symbols Description: Retrieve\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### Task 2: You are given two endpoints that belong to different APIs.",
+                "back_trans_input_tokens_mean": -2.462376836902839
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: getQuotesForAllSymbols Description: Get quotes API: 1Forge Finance",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.25019943714141846,
+                "back_trans_input": "Task: Identifier: getQuotesForAllSymbols Description: Get quotes API: 1Forge Finance\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### Task 2\n\n\n| Identifier  | Functionality | Description | API |\n|",
+                "back_trans_input_tokens_mean": -2.405440324690284
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: get_quotes_for_all_symbols Description: Get",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.07406528429551558,
+                "back_trans_input": "Task: Identifier: get_quotes_for_all_symbols Description: Get\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Solution\n```python\ndef generate(identifier, func, descr, api):\n    return f",
+                "back_trans_input_tokens_mean": -2.4489225645860038
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: get_all_symbols Description: Get quotes API: 1Forge",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.21038943529129028,
+                "back_trans_input": "Task: Identifier: get_all_symbols Description: Get quotes API: 1Forge\n\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n```python\nfrom flask import jsonify\n\n\n@app.",
+                "back_trans_input_tokens_mean": -2.422302717068156
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "Identifier: get_quotes_for_all_symbols Description: Get"
+        }
+    },
+    {
+        "api_call": "curl --request GET \\\n  --url https://1forge.com/forex-quotes/symbols",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "cURL",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: getSymbolsListDescription: Symbol List API: 1For",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.7020631486719305,
+                "back_trans_input": "Task: Identifier: getSymbolsListDescription: Symbol List API: 1For\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n##### Input Format For Endpoint:\n```\n{\n    \"identifier\": \"\",\n    \"function",
+                "back_trans_input_tokens_mean": -2.5041672714113252
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: GetListOfSymbolsForRealTimeQuotes Description: Get a",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.44036114757711237,
+                "back_trans_input": "Task: Identifier: GetListOfSymbolsForRealTimeQuotes Description: Get a\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Input Format\n\nThe first line contains three space-separated integers representing N, M, and",
+                "back_trans_input_tokens_mean": -2.6202216861754892
+            },
+            {
+                "idx": 3,
+                "candidate": "id, functionality, description, API name: 1Forge Finance APIs",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.31980552938249374,
+                "back_trans_input": "Task: id, functionality, description, API name: 1Forge Finance APIs\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Endpoint Description\n\nThe symbol list provides a list of all available ticker symbols that are supported",
+                "back_trans_input_tokens_mean": -2.2511842832790583
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: symbol-list Description: Symbol List Endpoint: API: 1Forge Finance API",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.24011627652428366,
+                "back_trans_input": "Task: Identifier: symbol-list Description: Symbol List Endpoint: API: 1Forge Finance API\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Expected Output:\n\nIdentifier: getSymbolList Functionality: Get a list of symbols for which",
+                "back_trans_input_tokens_mean": -2.3199739131060513
+            },
+            {
+                "idx": 5,
+                "candidate": "identifier: 1Forge Finance APIs/get-symbols, functionality",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.6092239320278168,
+                "back_trans_input": "Task: identifier: 1Forge Finance APIs/get-symbols, functionality\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note:** The endpoint may or may not have the same identifier as in the question prompt.",
+                "back_trans_input_tokens_mean": -2.357352348763173
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "Identifier: symbol-list Description: Symbol List Endpoint: API: 1Forge Finance API"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://1forge.com/forex-quotes/symbols\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Java",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: get_real_time_quotes",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.37351672989981516,
+                "back_trans_input": "Task: Identifier: get_real_time_quotes\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Hint:** The endpoint can be found in the documentation at https://docs.",
+                "back_trans_input_tokens_mean": -2.332112609362993
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: symbols, Functionality: get a list of symbols for which we provide real-time",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.4947455146095969,
+                "back_trans_input": "Task: Identifier: symbols, Functionality: get a list of symbols for which we provide real-time\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Hints\n\n * The API is called finance\n * The endpoints are in alphabetical order\n *",
+                "back_trans_input_tokens_mean": -2.340931623036625
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: symbol_list, Functionality: Get a list of symbols for which we provide real",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.25144446979869495,
+                "back_trans_input": "Task: Identifier: symbol_list, Functionality: Get a list of symbols for which we provide real\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n---\n\n<div align=\"center\">\n  <h3>Endpoints</h3>\n\n  <",
+                "back_trans_input_tokens_mean": -2.321068654533561
+            },
+            {
+                "idx": 4,
+                "candidate": "id, functionality, description, API name: Get a list of symbols for which we provide real",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.27248696847395465,
+                "back_trans_input": "Task: id, functionality, description, API name: Get a list of symbols for which we provide real\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note that if your answer is not correct, then no points will be awarded.",
+                "back_trans_input_tokens_mean": -2.2809193298106885
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: symbolListGetListRealTimeQuotesDescription: Get a list of",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.7307649634101174,
+                "back_trans_input": "Task: Identifier: symbolListGetListRealTimeQuotesDescription: Get a list of\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": " (https://www.forgef.com/financeapis)\n\nExample Response:\n\n{",
+                "back_trans_input_tokens_mean": -2.6374366039366235
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "id, functionality, description, API name: Get a list of symbols for which we provide real"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://1forge.com/forex-quotes/symbols'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Node",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: symbolList; function: Real Time Quotes",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.608302388872419,
+                "back_trans_input": "Task: Identifier: symbolList; function: Real Time Quotes\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note:** Please do not use any external libraries or tools such as Swagger Editor etc.",
+                "back_trans_input_tokens_mean": -2.496806332322418
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: RealTimeSymbolsList Description: Get a list of symbols for which we provide real",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.5397965745492415,
+                "back_trans_input": "Task: Identifier: RealTimeSymbolsList Description: Get a list of symbols for which we provide real\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n\n\n\n\nTest cases are in test_cases directory",
+                "back_trans_input_tokens_mean": -2.4344719602861478
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: symbolList, Functionality:get a list of symbols for which we provide real-",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.47635720534758136,
+                "back_trans_input": "Task: Identifier: symbolList, Functionality:get a list of symbols for which we provide real-\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## 2. Generate the functionality based on the provided identifier, endpoint's ID.",
+                "back_trans_input_tokens_mean": -2.457053628586631
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: get_real_time_quotes, Functionality: list quotes by symbol,",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.7207430872050199,
+                "back_trans_input": "Task: Identifier: get_real_time_quotes, Functionality: list quotes by symbol,\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## 2. Re-generate the following JSON:\n{\n    \"id\": \"get_",
+                "back_trans_input_tokens_mean": -2.412995833476991
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: GET_SYMBOLS_LIST Description: Symbol List API:",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.4218250242146579,
+                "back_trans_input": "Task: Identifier: GET_SYMBOLS_LIST Description: Symbol List API:\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": " for Developers\n\n### Solution [![Solution](https://img.",
+                "back_trans_input_tokens_mean": -2.478033185943844
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "Identifier: GET_SYMBOLS_LIST Description: Symbol List API:"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"1forge.com\")\n\nconn.request(\"GET\", \"/forex-quotes/symbols\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Python",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: sym, Functionality: get a list of symbols for which we provide",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.5605722015554254,
+                "back_trans_input": "Task: Identifier: sym, Functionality: get a list of symbols for which we provide\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note:** The following information may or may not help you in completing your assignment! \n\n* The endpoint",
+                "back_trans_input_tokens_mean": -2.38743294775486
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: list_of_symbols Description: Symbol List Endpoint: API",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.33527083830399945,
+                "back_trans_input": "Task: Identifier: list_of_symbols Description: Symbol List Endpoint: API\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n\"\"\"\n\n\n# Write your code here!\n",
+                "back_trans_input_tokens_mean": -2.454085871577263
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: GetSymbolList/25 Functionality: Retrieve real-time quotes for symbols Description: ",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.9263139096173373,
+                "back_trans_input": "Task: Identifier: GetSymbolList/25 Functionality: Retrieve real-time quotes for symbols Description: \n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Task: Identifier: PlaceOrder/1 Functionality: Place order Description: \n\nPlace Order ",
+                "back_trans_input_tokens_mean": -2.4260143366726963
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: 1Forge Finance APIs/real-time_quotes.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.5227836056759483,
+                "back_trans_input": "Task: Identifier: 1Forge Finance APIs/real-time_quotes.\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note:** The above information may not be correct or accurate.",
+                "back_trans_input_tokens_mean": -2.2905534878373146
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: getRealtimeSymbolsDescription: _GET List of real-time symbols",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.3247191905975342,
+                "back_trans_input": "Task: Identifier: getRealtimeSymbolsDescription: _GET List of real-time symbols\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\nExpected Output:\nIdentifier: getRealtimeSymbols\nFunctionality: _GET List of",
+                "back_trans_input_tokens_mean": -2.4949432666485127
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "Identifier: list_of_symbols Description: Symbol List Endpoint: API"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://1forge.com/forex-quotes/symbols\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "go",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "id: 54431, functionality: Get a list of symbols for which we provide real-",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.7315974777395075,
+                "back_trans_input": "Task: id: 54431, functionality: Get a list of symbols for which we provide real-\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n# Endpoint identifier example:\n\n{\n    \"id\": \"d3f4c1a",
+                "back_trans_input_tokens_mean": -2.39754147202004
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: symbol_list Functionality: Real-time quote",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.0995577335357667,
+                "back_trans_input": "Task: Identifier: symbol_list Functionality: Real-time quote\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### 4.3.1 [1Forge Finance APIs] (https://github.",
+                "back_trans_input_tokens_mean": -2.418570476193582
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: getListSymbolsDescription: the list of symbol names, and their",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.1290180032903498,
+                "back_trans_input": "Task: Identifier: getListSymbolsDescription: the list of symbol names, and their\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\nFor example, if your input was\n\n```json\n{\n  \"id\": \"getSymbol",
+                "back_trans_input_tokens_mean": -2.579495280981064
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: get_symbols_list Description: Get a list of symbols for",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.33681388334794476,
+                "back_trans_input": "Task: Identifier: get_symbols_list Description: Get a list of symbols for\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### 2.1.1.3\n\nThe endpoints in this section are not provided with any",
+                "back_trans_input_tokens_mean": -2.452452003955841
+            },
+            {
+                "idx": 5,
+                "candidate": "identifier: symbolList, functionality: Get a list of symbols for which we provide real-time",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.3159156495874578,
+                "back_trans_input": "Task: identifier: symbolList, functionality: Get a list of symbols for which we provide real-time\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Question\n\nWhat would your output look like?",
+                "back_trans_input_tokens_mean": -2.310758139340932
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "identifier: symbolList, functionality: Get a list of symbols for which we provide real-time"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://1forge.com/forex-quotes/symbols\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Ruby",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: get_real_time_quotes",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.5869474252065022,
+                "back_trans_input": "Task: Identifier: get_real_time_quotes\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note:** The solution should not contain any hardcoded values or logic; it must only use the data",
+                "back_trans_input_tokens_mean": -2.332112609362993
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: Get Symbols for Real-Time Quotes Description: Symbol List API: 1",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.4782660928639499,
+                "back_trans_input": "Task: Identifier: Get Symbols for Real-Time Quotes Description: Symbol List API: 1\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": " are documented in OpenAPI format at https://docs.",
+                "back_trans_input_tokens_mean": -2.4328951395474947
+            },
+            {
+                "idx": 3,
+                "candidate": "identifier: Symbol List, functionality: Get a list of symbols for which we provide real-",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.33334419944069604,
+                "back_trans_input": "Task: identifier: Symbol List, functionality: Get a list of symbols for which we provide real-\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Answer:** symbol_list/symbolList.",
+                "back_trans_input_tokens_mean": -2.3805641614473783
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: Symbol_List Description: Symbol List Endpoint: API: 1Forge Finance",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.4498301527716897,
+                "back_trans_input": "Task: Identifier: Symbol_List Description: Symbol List Endpoint: API: 1Forge Finance\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n## Sample Input (JSON)\n```json\n{\n    \"task\": {\n        \"identifier",
+                "back_trans_input_tokens_mean": -2.354666990178232
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: symList; Function-ality: get a list of symbols for which",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.0914287892254917,
+                "back_trans_input": "Task: Identifier: symList; Function-ality: get a list of symbols for which\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### Example\n\n```json\n{\n    \"identifier\": \"symlist\",\n    \"functionality\":",
+                "back_trans_input_tokens_mean": -2.5341506749391556
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "identifier: Symbol List, functionality: Get a list of symbols for which we provide real-"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://1forge.com/forex-quotes/symbols\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "PHP",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: realtime_symbols List",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.7689563887459892,
+                "back_trans_input": "Task: Identifier: realtime_symbols List\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n---\n\nTask: Identifier: get_realtime_quotes For\n\nFunctionality: Get",
+                "back_trans_input_tokens_mean": -2.440821691354116
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: get_real_time_quotes_symbols/get_",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.45257270336151123,
+                "back_trans_input": "Task: Identifier: get_real_time_quotes_symbols/get_\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### 3.4.2.3.",
+                "back_trans_input_tokens_mean": -2.364314951002598
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: SymbolListDescription: Get a list of symbols for which we provide real-",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.23628190972588278,
+                "back_trans_input": "Task: Identifier: SymbolListDescription: Get a list of symbols for which we provide real-\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\nExpected Response: {\n    \"identifier\": \"SymbolList\",\n    \"functionality\": ",
+                "back_trans_input_tokens_mean": -2.4079420400220295
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: 1Forge Finance APIs/finance/quotes/sym",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.39142660661177203,
+                "back_trans_input": "Task: Identifier: 1Forge Finance APIs/finance/quotes/sym\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n```json\n{\n    \"data\": [\n        {\n            \"symbol\": \"AAPL",
+                "back_trans_input_tokens_mean": -2.325965770586269
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: symbolList Endpoint: Description: Get a list of symbols for which we provide real",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.44194214994257147,
+                "back_trans_input": "Task: Identifier: symbolList Endpoint: Description: Get a list of symbols for which we provide real\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n\n\n\n\n\n\n\n\nhttps://github.com/1forge/1forge-finance-api",
+                "back_trans_input_tokens_mean": -2.423927045050468
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "Identifier: SymbolListDescription: Get a list of symbols for which we provide real-"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://1forge.com/forex-quotes/symbols\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "swift",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Identifier: real_time_quotes",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.5739627083142599,
+                "back_trans_input": "Task: Identifier: real_time_quotes\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note:** The input string can contain alphanumeric characters only (no punctuation or whitespace",
+                "back_trans_input_tokens_mean": -2.318570931752523
+            },
+            {
+                "idx": 2,
+                "candidate": "Identifier: 1Forge_Finance_APIs_Symbol_List Name: List",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.6883201003074646,
+                "back_trans_input": "Task: Identifier: 1Forge_Finance_APIs_Symbol_List Name: List\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Note:** The endpoints are not necessarily present in a single file or directory.",
+                "back_trans_input_tokens_mean": -2.3480923836047833
+            },
+            {
+                "idx": 3,
+                "candidate": "Identifier: GET_ASSIGNMENTS, functionality",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -1.0921329498291015,
+                "back_trans_input": "Task: Identifier: GET_ASSIGNMENTS, functionality\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n**Hint:** You can also use the browser network inspector or developer tools to view the request to get the",
+                "back_trans_input_tokens_mean": -2.602168847706692
+            },
+            {
+                "idx": 4,
+                "candidate": "Identifier: getSymListForRealTimeQuotes Description: Symbol List End",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.5139049291610718,
+                "back_trans_input": "Task: Identifier: getSymListForRealTimeQuotes Description: Symbol List End\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### How to test your submission?\n\nTo test if your solution works, run it on our sample",
+                "back_trans_input_tokens_mean": -2.6448196910676502
+            },
+            {
+                "idx": 5,
+                "candidate": "Identifier: get-symbols Description: Get a list of symbols for which we",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": -0.41407779130068695,
+                "back_trans_input": "Task: Identifier: get-symbols Description: Get a list of symbols for which we\n\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \n\nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "\n\n### 2.1.2.3.",
+                "back_trans_input_tokens_mean": -2.4506915509700775
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "Identifier: get-symbols Description: Get a list of symbols for which we"
+        }
+    }
+]

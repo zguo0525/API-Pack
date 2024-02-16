@@ -1,0 +1,1138 @@
+[
+    {
+        "api_call": "curl --request GET \\\n  --url https://1forge.com/forex-quotes/quotes",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "cURL",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.4830857203869168
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.4830857203869168
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.524499822212621
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.524499822212621
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.4830857203869168
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "I'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs."
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://1forge.com/forex-quotes/quotes\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Java",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.792019808400949
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve the current quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve the current quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.026507603022478
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to retrieve quotes for all the available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve quotes for all the available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.780555751935205
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve quotes for all the available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve quotes for all the available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.780555751935205
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "I'd like to retrieve quotes for all the available symbols using the 1Forge Finance APIs."
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://1forge.com/forex-quotes/quotes'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Node",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.792019808400949
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve the latest quotes for various financial instruments using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve the latest quotes for various financial instruments using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.161248143829868
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to retrieve real-time quotes for all supported symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all supported symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.788824250458719
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve quotes for all the available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve quotes for all the available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.780555751935205
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "I'd like to retrieve quotes for all the available symbols using the 1Forge Finance APIs."
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"1forge.com\")\n\nconn.request(\"GET\", \"/forex-quotes/quotes\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Python",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.4830857203869168
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve quotes for all symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve quotes for all symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.6915031679610593
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "I'd like to retrieve quotes for all symbols using the 1Forge Finance APIs."
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://1forge.com/forex-quotes/quotes\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "go",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.524499822212621
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.524499822212621
+            },
+            {
+                "idx": 3,
+                "candidate": "To obtain real-time quotes for all available symbols using the 1Forge Finance APIs, please guide me through the process.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nTo obtain real-time quotes for all available symbols using the 1Forge Finance APIs, please guide me through the process.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.269821861665281
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve quotes for all available symbols using the 1Forge Finance APIs. Can you guide me on how to do that?",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve quotes for all available symbols using the 1Forge Finance APIs. Can you guide me on how to do that?\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.79507083464309
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "I'd like to retrieve quotes for all available symbols using the 1Forge Finance APIs. Can you guide me on how to do that?"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://1forge.com/forex-quotes/quotes\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Ruby",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.4830857203869168
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.524499822212621
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve the current quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve the current quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.026507603022478
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.524499822212621
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "I'd like to retrieve the current quotes for all available symbols using the 1Forge Finance APIs."
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://1forge.com/forex-quotes/quotes\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "PHP",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs. Could you please guide me on how to do that?",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs. Could you please guide me on how to do that?\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.4101115210957795
+            },
+            {
+                "idx": 3,
+                "candidate": "To obtain real-time quotes for all available symbols using the 1Forge Finance APIs, kindly guide me through the process.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nTo obtain real-time quotes for all available symbols using the 1Forge Finance APIs, kindly guide me through the process.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.223204313584292
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve real-time quotes for all supported symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all supported symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.788824250458719
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve the current quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve the current quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.026507603022478
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "I'd like to retrieve the current quotes for all available symbols using the 1Forge Finance APIs."
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://1forge.com/forex-quotes/quotes\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "swift",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.4830857203869168
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for various financial instruments using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.524499822212621
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs. Could you please guide me on how to do that?",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs. Could you please guide me on how to do that?\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.443956374942764
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve real-time quotes for all available symbols using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.619354853781054
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "I'd like to retrieve real-time quotes for all symbols using the 1Forge Finance APIs. Could you please guide me on how to do that?"
+        }
+    },
+    {
+        "api_call": "curl --request GET \\\n  --url https://1forge.com/forex-quotes/symbols",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "cURL",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Could you please provide me with the list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with the list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.382535164473868
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve a list of symbols for which you offer real-time quotes using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which you offer real-time quotes using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4383492650666212
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to obtain a list of symbols for which real-time quotes are available through the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to obtain a list of symbols for which real-time quotes are available through the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4489379837705434
+            },
+            {
+                "idx": 4,
+                "candidate": "Could you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3749067695489368
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4909547107780927
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "Could you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://1forge.com/forex-quotes/symbols\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Java",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I want to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI want to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4744983967834742
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve the list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve the list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.5019953163251547
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4909547107780927
+            },
+            {
+                "idx": 4,
+                "candidate": "Could you provide me with the list of symbols for which real-time quotes are available using the 1Forge Finance APIs?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you provide me with the list of symbols for which real-time quotes are available using the 1Forge Finance APIs?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4144881166171024
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4909547107780927
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "Could you provide me with the list of symbols for which real-time quotes are available using the 1Forge Finance APIs?"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://1forge.com/forex-quotes/symbols'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Node",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve the list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve the list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.5019953163251547
+            },
+            {
+                "idx": 2,
+                "candidate": "Could you please provide me with the list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with the list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.382535164473868
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to retrieve a list of symbols for which real-time quotes are available from the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which real-time quotes are available from the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4635045822522224
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve a list of symbols for which you offer real-time quotes using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which you offer real-time quotes using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4383492650666212
+            },
+            {
+                "idx": 5,
+                "candidate": "Could you help me retrieve the list of symbols for which real-time quotes are available using the 1Forge Finance APIs?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you help me retrieve the list of symbols for which real-time quotes are available using the 1Forge Finance APIs?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4995301486673958
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "Could you please provide me with the list of symbols for which 1Forge Finance offers real-time quotes?"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"1forge.com\")\n\nconn.request(\"GET\", \"/forex-quotes/symbols\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Python",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Could you provide me with the list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you provide me with the list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3735520224029711
+            },
+            {
+                "idx": 2,
+                "candidate": "I want to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI want to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4744983967834742
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to obtain a list of symbols for which 1Forge Finance provides real-time quotes.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to obtain a list of symbols for which 1Forge Finance provides real-time quotes.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4846959573929321
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4909547107780927
+            },
+            {
+                "idx": 5,
+                "candidate": "Could you please help me retrieve a list of symbols for which 1Forge Finance provides real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please help me retrieve a list of symbols for which 1Forge Finance provides real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.417306030058889
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "Could you provide me with the list of symbols for which 1Forge Finance offers real-time quotes?"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://1forge.com/forex-quotes/symbols\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "go",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to retrieve a list of symbols for which 1Forge Finance provides real-time quotes.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which 1Forge Finance provides real-time quotes.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4872253825173987
+            },
+            {
+                "idx": 2,
+                "candidate": "I want to retrieve a list of symbols for which 1Forge Finance provides real-time quotes. How can I do that?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI want to retrieve a list of symbols for which 1Forge Finance provides real-time quotes. How can I do that?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4817569305868576
+            },
+            {
+                "idx": 3,
+                "candidate": "Can you provide me with the list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCan you provide me with the list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3751502699701463
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4909547107780927
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4909547107780927
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "Can you provide me with the list of symbols for which 1Forge Finance offers real-time quotes?"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://1forge.com/forex-quotes/symbols\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Ruby",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Could you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3749067695489368
+            },
+            {
+                "idx": 2,
+                "candidate": "Could you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3749067695489368
+            },
+            {
+                "idx": 3,
+                "candidate": "Could you please provide me with the list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with the list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.382535164473868
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to obtain a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to obtain a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4707949347234563
+            },
+            {
+                "idx": 5,
+                "candidate": "Can you help me retrieve the list of symbols for which 1Forge Finance provides real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCan you help me retrieve the list of symbols for which 1Forge Finance provides real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.406924439648651
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "Could you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://1forge.com/forex-quotes/symbols\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "PHP",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I want to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI want to retrieve a list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4744983967834742
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve the list of symbols for which 1Forge Finance provides real-time quotes.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve the list of symbols for which 1Forge Finance provides real-time quotes.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4984960069002777
+            },
+            {
+                "idx": 3,
+                "candidate": "Could you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3749067695489368
+            },
+            {
+                "idx": 4,
+                "candidate": "Can you provide me with the list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCan you provide me with the list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3751502699701463
+            },
+            {
+                "idx": 5,
+                "candidate": "Could you please help me retrieve a list of symbols for which I can get real-time quotes using the 1Forge Finance APIs?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please help me retrieve a list of symbols for which I can get real-time quotes using the 1Forge Finance APIs?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4649988870728339
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "Could you please provide me with a list of symbols for which 1Forge Finance offers real-time quotes?"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://1forge.com/forex-quotes/symbols\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "swift",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "Could you please provide me with the list of symbols for which real-time quotes are available using the 1Forge Finance APIs?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with the list of symbols for which real-time quotes are available using the 1Forge Finance APIs?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4090120328266893
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to retrieve the list of symbols for which real-time quotes are available using the 1Forge Finance APIs.",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to retrieve the list of symbols for which real-time quotes are available using the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.5019953163251547
+            },
+            {
+                "idx": 3,
+                "candidate": "Could you please provide me with the list of symbols for which 1Forge Finance offers real-time quotes?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with the list of symbols for which 1Forge Finance offers real-time quotes?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.382535164473868
+            },
+            {
+                "idx": 4,
+                "candidate": "Could you please provide me with the list of symbols for which I can get real-time quotes using the 1Forge Finance APIs?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with the list of symbols for which I can get real-time quotes using the 1Forge Finance APIs?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3801809874272681
+            },
+            {
+                "idx": 5,
+                "candidate": "Could you please provide me with a list of symbols for which I can obtain real-time quotes using the 1Forge Finance APIs?",
+                "input_text": "Functionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease show me how to get quotes for all symbols with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to know how to get a list of symbols for which we provide real-time quotes with the 1Forge Finance APIs.\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs\n\n###Input:\nI need to get quotes with the 1Forge Finance APIs. Please help me with that.\n###Output:\nFunctionality: Get quotes for all symbols\nDescription: Get quotes\nEndpoint: \nAPI: 1Forge Finance APIs\n\n\nHere is the actual task for you:\n\n###Input:\nCould you please provide me with a list of symbols for which I can obtain real-time quotes using the 1Forge Finance APIs?\n###Output:\nFunctionality: Get a list of symbols for which we provide real-time quotes\nDescription: Symbol List\nEndpoint: \nAPI: 1Forge Finance APIs",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.380207202678704
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "Could you please provide me with the list of symbols for which I can get real-time quotes using the 1Forge Finance APIs?"
+        }
+    }
+]

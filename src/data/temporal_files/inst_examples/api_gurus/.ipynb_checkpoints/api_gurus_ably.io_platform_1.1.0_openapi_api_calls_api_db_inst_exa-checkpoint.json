@@ -1,0 +1,76 @@
+{
+    "list": [
+        {
+            "API name": "Platform API",
+            "functionality": "Get metadata of a channel",
+            "description": "Get metadata of a channel",
+            "endpoint": "getMetadataOfChannel",
+            "output": "Could you please explain the steps to retrieve metadata information for a specific channel using the Platform API?",
+            "output to refine": "Please show me how to get metadata of a channel with the Platform API."
+        },
+        {
+            "API name": "Platform API",
+            "functionality": "Get metadata of a channel",
+            "description": "Get metadata of a channel",
+            "endpoint": "getMetadataOfChannel",
+            "output": "Could you kindly assist me in retrieving the metadata details for a particular channel using the Platform API?",
+            "output to refine": "I need to get metadata of a channel with the Platform API. Please help me with that."
+        },
+        {
+            "API name": "Platform API",
+            "functionality": "Get metadata of a channel",
+            "description": "Get metadata of a channel",
+            "endpoint": "getMetadataOfChannel",
+            "output": "User: could you please provide a step-by-step example of using the Platform API's getMetadataOfChannel function?",
+            "output to refine": "Please give me an example of how to use the endpoint getMetadataOfChannel from Platform API."
+        },
+        {
+            "API name": "Platform API",
+            "functionality": "List devices registered for receiving push notifications",
+            "description": "List of device details of devices registed for push notifications.",
+            "endpoint": "getRegisteredPushDevices",
+            "output": "Could you please help me retrieve a list of devices registered for push notifications using the Platform API?",
+            "output to refine": "Please show me how to list devices registered for receiving push notifications with the Platform API."
+        },
+        {
+            "API name": "Platform API",
+            "functionality": "List devices registered for receiving push notifications",
+            "description": "List of device details of devices registed for push notifications.",
+            "endpoint": "getRegisteredPushDevices",
+            "output": "Can you help me retrieve a list ofdevice details for devices registered to receive push notifications using the Platform API?",
+            "output to refine": "I need to list of device details of devices registed for push notifications. with the Platform API. Please help me with that."
+        },
+        {
+            "API name": "Platform API",
+            "functionality": "List devices registered for receiving push notifications",
+            "description": "List of device details of devices registed for push notifications.",
+            "endpoint": "getRegisteredPushDevices",
+            "output": "Could you please provide an example usage scenario for retrieving a list of registered devices for receiving push notifications with the Platform API?",
+            "output to refine": "Please give me an example of how to use the endpoint getRegisteredPushDevices from Platform API."
+        },
+        {
+            "API name": "Platform API",
+            "functionality": "Update a device registration",
+            "description": "Specific attributes of an existing registration can be updated. Only clientId, metadata and push.recipient are mutable.",
+            "endpoint": "patchPushDeviceDetails",
+            "output": "Could you please provide me with an example of how to update specific attributes of a device registration using the Platform API?",
+            "output to refine": "Give me an example of how to update a device registration with the Platform API."
+        },
+        {
+            "API name": "Platform API",
+            "functionality": "Update a device registration",
+            "description": "Specific attributes of an existing registration can be updated. Only clientId, metadata and push.recipient are mutable.",
+            "endpoint": "patchPushDeviceDetails",
+            "output": "How do I update specific attributes of an existing device registration using the Platform API? Only the clientId, metadata, and push.recipient can be modified.",
+            "output to refine": "I need to specific attributes of an existing registration can be updated. only clientid, metadata and push.recipient are mutable. with the Platform API. Please help me with that."
+        },
+        {
+            "API name": "Platform API",
+            "functionality": "Update a device registration",
+            "description": "Specific attributes of an existing registration can be updated. Only clientId, metadata and push.recipient are mutable.",
+            "endpoint": "patchPushDeviceDetails",
+            "output": "Could you please provide an example of updating specific attributes for an existing device registration using the Platform API?",
+            "output to refine": "Please give me an example of how to use the endpoint patchPushDeviceDetails from Platform API."
+        }
+    ]
+}

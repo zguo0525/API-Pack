@@ -1,0 +1,402 @@
+[
+    {
+        "api_call": "curl --request GET \\\n  --url https://1forge.com/forex-quotes/quotes",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "cURL",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://1forge.com/forex-quotes/quotes\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Java",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://1forge.com/forex-quotes/quotes'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Node",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"1forge.com\")\n\nconn.request(\"GET\", \"/forex-quotes/quotes\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Python",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://1forge.com/forex-quotes/quotes\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "go",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://1forge.com/forex-quotes/quotes\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "Ruby",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://1forge.com/forex-quotes/quotes\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "PHP",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://1forge.com/forex-quotes/quotes\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "swift",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"GET\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://1forge.com/forex-quotes/quotes\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "libcurl",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"GET\", \"https://1forge.com/forex-quotes/quotes\");\n\nxhr.send(data);",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get quotes for all symbols",
+        "api_arguments": {},
+        "description": "Get quotes",
+        "path": "/quotes",
+        "method": "get",
+        "lang": "javascript xhr",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "curl --request GET \\\n  --url https://1forge.com/forex-quotes/symbols",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "cURL",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://1forge.com/forex-quotes/symbols\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Java",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://1forge.com/forex-quotes/symbols'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Node",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"1forge.com\")\n\nconn.request(\"GET\", \"/forex-quotes/symbols\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Python",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://1forge.com/forex-quotes/symbols\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "go",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://1forge.com/forex-quotes/symbols\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "Ruby",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://1forge.com/forex-quotes/symbols\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "PHP",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://1forge.com/forex-quotes/symbols\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "swift",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"GET\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://1forge.com/forex-quotes/symbols\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "libcurl",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"GET\", \"https://1forge.com/forex-quotes/symbols\");\n\nxhr.send(data);",
+        "api_name": "1Forge Finance APIs",
+        "api_provider": "1forge.com",
+        "endpoint": "",
+        "framework": "1forge.com",
+        "functionality": "Get a list of symbols for which we provide real-time quotes",
+        "api_arguments": {},
+        "description": "Symbol List",
+        "path": "/symbols",
+        "method": "get",
+        "lang": "javascript xhr",
+        "domain": [
+            "forex",
+            "finance",
+            "quotes"
+        ],
+        "api_description": "Stock and Forex Data and Realtime Quotes",
+        "api_license": ""
+    }
+]

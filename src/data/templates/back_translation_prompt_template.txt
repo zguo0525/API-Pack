@@ -1,0 +1,5 @@
+You will be given a task for which an endpoint is useful. In addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to. 
+
+Your work is to re-generate the endpoint's identifier, functionality, description, and API name.
+
+{{input}}

@@ -1,0 +1,908 @@
+[
+    {
+        "api_call": "curl --request POST \\\n  --url https://apisetu.gov.in/dgecerttn/v3/hscer/certificate \\\n  --header 'X-APISETU-APIKEY: REPLACE_KEY_VALUE' \\\n  --header 'content-type: application/json' \\\n  --data '{\"certificateParameters\":{\"CertificateType\":\"REGULAR\",\"DOB\":\"31-12-1980\",\"FullName\":\"Sunil Kumar\",\"RROLL\":\"857111\",\"month\":\"MAR\",\"year\":\"2017\"},\"consentArtifact\":{\"consent\":{\"consentId\":\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\",\"data\":{\"id\":\"string\"},\"dataConsumer\":{\"id\":\"string\"},\"dataProvider\":{\"id\":\"string\"},\"permission\":{\"access\":\"string\",\"dateRange\":{\"from\":\"2019-08-24T14:15:22Z\",\"to\":\"2019-08-24T14:15:22Z\"},\"frequency\":{\"repeats\":0,\"unit\":\"string\",\"value\":0}},\"purpose\":{\"description\":\"string\"},\"timestamp\":\"2019-08-24T14:15:22Z\",\"user\":{\"email\":\"string\",\"idNumber\":\"string\",\"idType\":\"string\",\"mobile\":\"string\"}},\"signature\":{\"signature\":\"string\"}},\"format\":\"pdf\",\"txnId\":\"f7f1469c-29b0-4325-9dfc-c567200a70f7\"}'",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "hscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class XII Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class XII Marksheet.",
+        "path": "/hscer/certificate",
+        "method": "post",
+        "lang": "cURL",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check the authenticity of your Class XII marksheet issued by Tamil Nadu State Board, kindly use the hscer API provided by Tamil Nadu Directorate of Government Examinations.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of your Class XII marksheet issued by Tamil Nadu State Board, kindly use the hscer API provided by Tamil Nadu Directorate of Government Examinations.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3714773612343045
+            },
+            {
+                "idx": 2,
+                "candidate": "To check the authenticity of my Class XII marksheet, I would like to use the Tamil Nadu State Board's marksheet verification API. Could you please help me with the query I need to make to the hscer endpoint?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class XII marksheet, I would like to use the Tamil Nadu State Board's marksheet verification API. Could you please help me with the query I need to make to the hscer endpoint?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4473048171340683
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class XII marks using the Tamil Nadu State Board API, how do I proceed?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks using the Tamil Nadu State Board API, how do I proceed?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1498681874811314
+            },
+            {
+                "idx": 4,
+                "candidate": "To check my Class XII marks, I would like to use the verification service provided by the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the process using their hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks, I would like to use the verification service provided by the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the process using their hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1619770730760786
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "To check my Class XII marks using the Tamil Nadu State Board API, how do I proceed?"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nMediaType mediaType = MediaType.parse(\"application/json\");\nRequestBody body = RequestBody.create(mediaType, \"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\");\nRequest request = new Request.Builder()\n  .url(\"https://apisetu.gov.in/dgecerttn/v3/hscer/certificate\")\n  .post(body)\n  .addHeader(\"X-APISETU-APIKEY\", \"REPLACE_KEY_VALUE\")\n  .addHeader(\"content-type\", \"application/json\")\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "hscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class XII Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class XII Marksheet.",
+        "path": "/hscer/certificate",
+        "method": "post",
+        "lang": "Java",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check my Class XII marks sheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the hscer API.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks sheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the hscer API.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.0882273172416592
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class XII marks sheet issued by Tamil Nadu State Board, how can I use the hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks sheet issued by Tamil Nadu State Board, how can I use the hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3896344526349529
+            },
+            {
+                "idx": 3,
+                "candidate": "To check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, I would use the hscer API. Could you please guide me on how to make this request?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, I would use the hscer API. Could you please guide me on how to make this request?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3632917006515781
+            },
+            {
+                "idx": 4,
+                "candidate": "To check my Class XII marks, I would like to use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Please help me with the query to be made to the hscer API.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks, I would like to use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Please help me with the query to be made to the hscer API.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.232496033652821
+            },
+            {
+                "idx": 5,
+                "candidate": "To check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the hscer API.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the hscer API.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3522352744535113
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "To check my Class XII marks sheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the hscer API."
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {\n  method: 'POST',\n  url: 'https://apisetu.gov.in/dgecerttn/v3/hscer/certificate',\n  headers: {'X-APISETU-APIKEY': 'REPLACE_KEY_VALUE', 'content-type': 'application/json'},\n  body: {\n    certificateParameters: {\n      CertificateType: 'REGULAR',\n      DOB: '31-12-1980',\n      FullName: 'Sunil Kumar',\n      RROLL: '857111',\n      month: 'MAR',\n      year: '2017'\n    },\n    consentArtifact: {\n      consent: {\n        consentId: 'ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba',\n        data: {id: 'string'},\n        dataConsumer: {id: 'string'},\n        dataProvider: {id: 'string'},\n        permission: {\n          access: 'string',\n          dateRange: {from: '2019-08-24T14:15:22Z', to: '2019-08-24T14:15:22Z'},\n          frequency: {repeats: 0, unit: 'string', value: 0}\n        },\n        purpose: {description: 'string'},\n        timestamp: '2019-08-24T14:15:22Z',\n        user: {email: 'string', idNumber: 'string', idType: 'string', mobile: 'string'}\n      },\n      signature: {signature: 'string'}\n    },\n    format: 'pdf',\n    txnId: 'f7f1469c-29b0-4325-9dfc-c567200a70f7'\n  },\n  json: true\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "hscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class XII Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class XII Marksheet.",
+        "path": "/hscer/certificate",
+        "method": "post",
+        "lang": "Node",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check my Class XII marks issued by Tamil Nadu State Board, how can I use the verification API from Tamil Nadu Directorate of Government Examinations?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks issued by Tamil Nadu State Board, how can I use the verification API from Tamil Nadu Directorate of Government Examinations?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3252795281128105
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class XII marksheet, how can I use the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations) API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marksheet, how can I use the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations) API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.2431070361945018
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class XII marksheet, how do I use the Tamil Nadu State Board's marksheet verification API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marksheet, how do I use the Tamil Nadu State Board's marksheet verification API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.2246169947945253
+            },
+            {
+                "idx": 4,
+                "candidate": "To check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the hscer API.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the hscer API.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3316731549887668
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "To check my Class XII marksheet, how do I use the Tamil Nadu State Board's marksheet verification API?"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"apisetu.gov.in\")\n\npayload = \"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\"\n\nheaders = {\n    'X-APISETU-APIKEY': \"REPLACE_KEY_VALUE\",\n    'content-type': \"application/json\"\n    }\n\nconn.request(\"POST\", \"/dgecerttn/v3/hscer/certificate\", payload, headers)\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "hscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class XII Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class XII Marksheet.",
+        "path": "/hscer/certificate",
+        "method": "post",
+        "lang": "Python",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, I will use the hscer API. Can you guide me on how to proceed?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, I will use the hscer API. Can you guide me on how to proceed?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.383505209149216
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class XII marks issued by Tamil Nadu State Board, how can I use the hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks issued by Tamil Nadu State Board, how can I use the hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4596920517420304
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class XII marks sheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the hscer API.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks sheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the hscer API.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.0882273172416592
+            },
+            {
+                "idx": 4,
+                "candidate": "To check my Class XII marksheet, I would use the Tamil Nadu State Board's (Tamil Nadu Directorate of Government Examinations) hscer API.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marksheet, I would use the Tamil Nadu State Board's (Tamil Nadu Directorate of Government Examinations) hscer API.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.084230812173757
+            },
+            {
+                "idx": 5,
+                "candidate": "To check my Class XII marks, I would like to use the verification API provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the process using their hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks, I would like to use the verification API provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the process using their hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1161475385789157
+            }
+        ],
+        "best_instruction": {
+            "idx": 4,
+            "candidate": "To check my Class XII marksheet, I would use the Tamil Nadu State Board's (Tamil Nadu Directorate of Government Examinations) hscer API."
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"strings\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://apisetu.gov.in/dgecerttn/v3/hscer/certificate\"\n\n\tpayload := strings.NewReader(\"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\")\n\n\treq, _ := http.NewRequest(\"POST\", url, payload)\n\n\treq.Header.Add(\"X-APISETU-APIKEY\", \"REPLACE_KEY_VALUE\")\n\treq.Header.Add(\"content-type\", \"application/json\")\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "hscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class XII Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class XII Marksheet.",
+        "path": "/hscer/certificate",
+        "method": "post",
+        "lang": "go",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check my Class XII marksheet, I would like to use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please guide me on how to use their hscer API for this purpose?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marksheet, I would like to use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please guide me on how to use their hscer API for this purpose?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1580161386199543
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class XII marks, I would like to use the verification API provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the process using the hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks, I would like to use the verification API provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the process using the hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.142668508458309
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class XII marks, I would like to use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations). Please help me with the query to access the hscer API.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks, I would like to use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations). Please help me with the query to access the hscer API.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1936391515144158
+            },
+            {
+                "idx": 4,
+                "candidate": "To check my Class XII marks issued by Tamil Nadu State Board, how can I use the hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks issued by Tamil Nadu State Board, how can I use the hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4596920517420304
+            },
+            {
+                "idx": 5,
+                "candidate": "To check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board, could you please guide me on how to use the hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board, could you please guide me on how to use the hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3964322792258976
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "To check my Class XII marks, I would like to use the verification API provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the process using the hscer API?"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://apisetu.gov.in/dgecerttn/v3/hscer/certificate\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\nrequest[\"X-APISETU-APIKEY\"] = 'REPLACE_KEY_VALUE'\nrequest[\"content-type\"] = 'application/json'\nrequest.body = \"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\"\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "hscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class XII Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class XII Marksheet.",
+        "path": "/hscer/certificate",
+        "method": "post",
+        "lang": "Ruby",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, I would use the hscer API. Can you guide me on how to do that?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, I would use the hscer API. Can you guide me on how to do that?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.393682550945363
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class XII marks issued by Tamil Nadu State Board, how can I use the API provided by Tamil Nadu Directorate of Government Examinations?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks issued by Tamil Nadu State Board, how can I use the API provided by Tamil Nadu Directorate of Government Examinations?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.2693183834794226
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class XII marks sheet, I would use the Tamil Nadu State Board's (Tamil Nadu Directorate of Government Examinations) API named hscer.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks sheet, I would use the Tamil Nadu State Board's (Tamil Nadu Directorate of Government Examinations) API named hscer.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1445777566519457
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "To check my Class XII marks sheet, I would use the Tamil Nadu State Board's (Tamil Nadu Directorate of Government Examinations) API named hscer."
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://apisetu.gov.in/dgecerttn/v3/hscer/certificate\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n  CURLOPT_POSTFIELDS => \"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\",\n  CURLOPT_HTTPHEADER => [\n    \"X-APISETU-APIKEY: REPLACE_KEY_VALUE\",\n    \"content-type: application/json\"\n  ],\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "hscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class XII Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class XII Marksheet.",
+        "path": "/hscer/certificate",
+        "method": "post",
+        "lang": "PHP",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check my Class XII marks issued by Tamil Nadu State Board, how do I use the hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks issued by Tamil Nadu State Board, how do I use the hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4098335562640603
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class XII marksheet, I would use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. You can use the hscer endpoint for this purpose.",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marksheet, I would use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. You can use the hscer endpoint for this purpose.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1328525797761253
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "To check my Class XII marksheet, I would use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. You can use the hscer endpoint for this purpose."
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet headers = [\n  \"X-APISETU-APIKEY\": \"REPLACE_KEY_VALUE\",\n  \"content-type\": \"application/json\"\n]\nlet parameters = [\n  \"certificateParameters\": [\n    \"CertificateType\": \"REGULAR\",\n    \"DOB\": \"31-12-1980\",\n    \"FullName\": \"Sunil Kumar\",\n    \"RROLL\": \"857111\",\n    \"month\": \"MAR\",\n    \"year\": \"2017\"\n  ],\n  \"consentArtifact\": [\n    \"consent\": [\n      \"consentId\": \"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\",\n      \"data\": [\"id\": \"string\"],\n      \"dataConsumer\": [\"id\": \"string\"],\n      \"dataProvider\": [\"id\": \"string\"],\n      \"permission\": [\n        \"access\": \"string\",\n        \"dateRange\": [\n          \"from\": \"2019-08-24T14:15:22Z\",\n          \"to\": \"2019-08-24T14:15:22Z\"\n        ],\n        \"frequency\": [\n          \"repeats\": 0,\n          \"unit\": \"string\",\n          \"value\": 0\n        ]\n      ],\n      \"purpose\": [\"description\": \"string\"],\n      \"timestamp\": \"2019-08-24T14:15:22Z\",\n      \"user\": [\n        \"email\": \"string\",\n        \"idNumber\": \"string\",\n        \"idType\": \"string\",\n        \"mobile\": \"string\"\n      ]\n    ],\n    \"signature\": [\"signature\": \"string\"]\n  ],\n  \"format\": \"pdf\",\n  \"txnId\": \"f7f1469c-29b0-4325-9dfc-c567200a70f7\"\n] as [String : Any]\n\nlet postData = JSONSerialization.data(withJSONObject: parameters, options: [])\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://apisetu.gov.in/dgecerttn/v3/hscer/certificate\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\nrequest.allHTTPHeaderFields = headers\nrequest.httpBody = postData as Data\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "hscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class XII Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class XII Marksheet.",
+        "path": "/hscer/certificate",
+        "method": "post",
+        "lang": "swift",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check my Class XII marks, I would like to use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the query to be sent to their hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks, I would like to use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the query to be sent to their hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1540793952071888
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class XII marksheet, I would like to use the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations) API. Could you help me with the query to do this using their hscer endpoint?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marksheet, I would like to use the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations) API. Could you help me with the query to do this using their hscer endpoint?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.2450369322916746
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class XII marks issued by Tamil Nadu State Board, how can I use the hscer API?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class XII marks issued by Tamil Nadu State Board, how can I use the hscer API?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.4596920517420304
+            },
+            {
+                "idx": 4,
+                "candidate": "To check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, I can use the hscer API. Can you guide me on how to proceed with this?",
+                "input_text": "Functionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class XII marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, I can use the hscer API. Can you guide me on how to proceed with this?\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3774766482956629
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "To check my Class XII marks, I would like to use the verification service provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. Could you please help me with the query to be sent to their hscer API?"
+        }
+    },
+    {
+        "api_call": "curl --request POST \\\n  --url https://apisetu.gov.in/dgecerttn/v3/sscer/certificate \\\n  --header 'X-APISETU-APIKEY: REPLACE_KEY_VALUE' \\\n  --header 'content-type: application/json' \\\n  --data '{\"certificateParameters\":{\"CertificateType\":\"REGULAR\",\"DOB\":\"31-12-1980\",\"FullName\":\"Sunil Kumar\",\"RROLL\":\"857111\",\"month\":\"MAR\",\"year\":\"2017\"},\"consentArtifact\":{\"consent\":{\"consentId\":\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\",\"data\":{\"id\":\"string\"},\"dataConsumer\":{\"id\":\"string\"},\"dataProvider\":{\"id\":\"string\"},\"permission\":{\"access\":\"string\",\"dateRange\":{\"from\":\"2019-08-24T14:15:22Z\",\"to\":\"2019-08-24T14:15:22Z\"},\"frequency\":{\"repeats\":0,\"unit\":\"string\",\"value\":0}},\"purpose\":{\"description\":\"string\"},\"timestamp\":\"2019-08-24T14:15:22Z\",\"user\":{\"email\":\"string\",\"idNumber\":\"string\",\"idType\":\"string\",\"mobile\":\"string\"}},\"signature\":{\"signature\":\"string\"}},\"format\":\"pdf\",\"txnId\":\"f7f1469c-29b0-4325-9dfc-c567200a70f7\"}'",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "sscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class X Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class X Marksheet.",
+        "path": "/sscer/certificate",
+        "method": "post",
+        "lang": "cURL",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check the authenticity of your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, kindly use the sscer API.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, kindly use the sscer API.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.2771428093123223
+            },
+            {
+                "idx": 2,
+                "candidate": "To check the authenticity of my Class X marksheet, I would like to use the verification API provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. How do I go about doing this using the sscer endpoint?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class X marksheet, I would like to use the verification API provided by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu. How do I go about doing this using the sscer endpoint?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3419029461814347
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class X marksheet, which was issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the sscer API.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, which was issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the sscer API.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1877438164232978
+            },
+            {
+                "idx": 4,
+                "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, how can I use the Tamil Nadu State Board API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1120323506209415
+            },
+            {
+                "idx": 5,
+                "candidate": "To check my Class X marksheet, which was conducted by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the API named sscer.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, which was conducted by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the API named sscer.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.0865433310102992
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "To check my Class X marksheet, which was conducted by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), please use the API named sscer."
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nMediaType mediaType = MediaType.parse(\"application/json\");\nRequestBody body = RequestBody.create(mediaType, \"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\");\nRequest request = new Request.Builder()\n  .url(\"https://apisetu.gov.in/dgecerttn/v3/sscer/certificate\")\n  .post(body)\n  .addHeader(\"X-APISETU-APIKEY\", \"REPLACE_KEY_VALUE\")\n  .addHeader(\"content-type\", \"application/json\")\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "sscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class X Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class X Marksheet.",
+        "path": "/sscer/certificate",
+        "method": "post",
+        "lang": "Java",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To verify my Class X marksheet, how do I use the Tamil Nadu State Board API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify my Class X marksheet, how do I use the Tamil Nadu State Board API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.0453193528090219
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class X marksheet, which was issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the API called sscer.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, which was issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the API called sscer.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1463725997617213
+            },
+            {
+                "idx": 3,
+                "candidate": "To verify your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, you can make use of their API named sscer. Just provide your unique roll number or other required details when making the API request.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, you can make use of their API named sscer. Just provide your unique roll number or other required details when making the API request.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.0444488711539794
+            },
+            {
+                "idx": 4,
+                "candidate": "To check my Class X marks sheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use their API named sscer.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marks sheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use their API named sscer.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.10696070816152
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "To verify your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, you can make use of their API named sscer. Just provide your unique roll number or other required details when making the API request."
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {\n  method: 'POST',\n  url: 'https://apisetu.gov.in/dgecerttn/v3/sscer/certificate',\n  headers: {'X-APISETU-APIKEY': 'REPLACE_KEY_VALUE', 'content-type': 'application/json'},\n  body: {\n    certificateParameters: {\n      CertificateType: 'REGULAR',\n      DOB: '31-12-1980',\n      FullName: 'Sunil Kumar',\n      RROLL: '857111',\n      month: 'MAR',\n      year: '2017'\n    },\n    consentArtifact: {\n      consent: {\n        consentId: 'ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba',\n        data: {id: 'string'},\n        dataConsumer: {id: 'string'},\n        dataProvider: {id: 'string'},\n        permission: {\n          access: 'string',\n          dateRange: {from: '2019-08-24T14:15:22Z', to: '2019-08-24T14:15:22Z'},\n          frequency: {repeats: 0, unit: 'string', value: 0}\n        },\n        purpose: {description: 'string'},\n        timestamp: '2019-08-24T14:15:22Z',\n        user: {email: 'string', idNumber: 'string', idType: 'string', mobile: 'string'}\n      },\n      signature: {signature: 'string'}\n    },\n    format: 'pdf',\n    txnId: 'f7f1469c-29b0-4325-9dfc-c567200a70f7'\n  },\n  json: true\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "sscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class X Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class X Marksheet.",
+        "path": "/sscer/certificate",
+        "method": "post",
+        "lang": "Node",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check the authenticity of your Class X marksheet issued by Tamil Nadu State Board, kindly use the API named sscer. This API will help you verify the details of your marksheet securely and efficiently.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of your Class X marksheet issued by Tamil Nadu State Board, kindly use the API named sscer. This API will help you verify the details of your marksheet securely and efficiently.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.298665411168243
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "To check the authenticity of your Class X marksheet issued by Tamil Nadu State Board, kindly use the API named sscer. This API will help you verify the details of your marksheet securely and efficiently."
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"apisetu.gov.in\")\n\npayload = \"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\"\n\nheaders = {\n    'X-APISETU-APIKEY': \"REPLACE_KEY_VALUE\",\n    'content-type': \"application/json\"\n    }\n\nconn.request(\"POST\", \"/dgecerttn/v3/sscer/certificate\", payload, headers)\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "sscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class X Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class X Marksheet.",
+        "path": "/sscer/certificate",
+        "method": "post",
+        "lang": "Python",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check the authenticity of your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, kindly use the sscer API.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, kindly use the sscer API.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.2771428093123223
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, how can I use the Tamil Nadu State Board API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1120323506209415
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, how can I use the Tamil Nadu State Board API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1120323506209415
+            },
+            {
+                "idx": 4,
+                "candidate": "To check the authenticity of my Class X marksheet, I would like to use the Tamil Nadu State Board's verification service. Could you please help me with the query to do this using their API named sscer?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Class X marksheet, I would like to use the Tamil Nadu State Board's verification service. Could you please help me with the query to do this using their API named sscer?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.3362556988103944
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"strings\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://apisetu.gov.in/dgecerttn/v3/sscer/certificate\"\n\n\tpayload := strings.NewReader(\"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\")\n\n\treq, _ := http.NewRequest(\"POST\", url, payload)\n\n\treq.Header.Add(\"X-APISETU-APIKEY\", \"REPLACE_KEY_VALUE\")\n\treq.Header.Add(\"content-type\", \"application/json\")\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "sscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class X Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class X Marksheet.",
+        "path": "/sscer/certificate",
+        "method": "post",
+        "lang": "go",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check my Class X marksheet, which was issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the sscer API.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, which was issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the sscer API.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1877438164232978
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, how can I use the Tamil Nadu State Board API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1120323506209415
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, how can I use the Tamil Nadu State Board API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1120323506209415
+            },
+            {
+                "idx": 4,
+                "candidate": "To check my Class X marksheet, which was issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the API named sscer.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, which was issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use the API named sscer.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1352054291753177
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://apisetu.gov.in/dgecerttn/v3/sscer/certificate\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\nrequest[\"X-APISETU-APIKEY\"] = 'REPLACE_KEY_VALUE'\nrequest[\"content-type\"] = 'application/json'\nrequest.body = \"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\"\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "sscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class X Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class X Marksheet.",
+        "path": "/sscer/certificate",
+        "method": "post",
+        "lang": "Ruby",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, kindly use the sscer API.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, kindly use the sscer API.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.144160032740109
+            },
+            {
+                "idx": 2,
+                "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, how can I use the Tamil Nadu State Board API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1120323506209415
+            },
+            {
+                "idx": 3,
+                "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet, how can I use the Tamil Nadu State Board API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.1120323506209415
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "To check my Class X marksheet, how can I use the Tamil Nadu State Board API?"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://apisetu.gov.in/dgecerttn/v3/sscer/certificate\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n  CURLOPT_POSTFIELDS => \"{\\\"certificateParameters\\\":{\\\"CertificateType\\\":\\\"REGULAR\\\",\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"RROLL\\\":\\\"857111\\\",\\\"month\\\":\\\"MAR\\\",\\\"year\\\":\\\"2017\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\",\n  CURLOPT_HTTPHEADER => [\n    \"X-APISETU-APIKEY: REPLACE_KEY_VALUE\",\n    \"content-type: application/json\"\n  ],\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "sscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class X Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class X Marksheet.",
+        "path": "/sscer/certificate",
+        "method": "post",
+        "lang": "PHP",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check my Class X marksheet issued by Tamil Nadu State Board, how can I use the API provided by Tamil Nadu Directorate of Government Examinations?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check my Class X marksheet issued by Tamil Nadu State Board, how can I use the API provided by Tamil Nadu Directorate of Government Examinations?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.2054320432503505
+            },
+            {
+                "idx": 2,
+                "candidate": "To verify my Class X marksheet, how do I use the Tamil Nadu State Board's API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify my Class X marksheet, how do I use the Tamil Nadu State Board's API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.0677736647001221
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "To verify my Class X marksheet, how do I use the Tamil Nadu State Board's API?"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet headers = [\n  \"X-APISETU-APIKEY\": \"REPLACE_KEY_VALUE\",\n  \"content-type\": \"application/json\"\n]\nlet parameters = [\n  \"certificateParameters\": [\n    \"CertificateType\": \"REGULAR\",\n    \"DOB\": \"31-12-1980\",\n    \"FullName\": \"Sunil Kumar\",\n    \"RROLL\": \"857111\",\n    \"month\": \"MAR\",\n    \"year\": \"2017\"\n  ],\n  \"consentArtifact\": [\n    \"consent\": [\n      \"consentId\": \"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\",\n      \"data\": [\"id\": \"string\"],\n      \"dataConsumer\": [\"id\": \"string\"],\n      \"dataProvider\": [\"id\": \"string\"],\n      \"permission\": [\n        \"access\": \"string\",\n        \"dateRange\": [\n          \"from\": \"2019-08-24T14:15:22Z\",\n          \"to\": \"2019-08-24T14:15:22Z\"\n        ],\n        \"frequency\": [\n          \"repeats\": 0,\n          \"unit\": \"string\",\n          \"value\": 0\n        ]\n      ],\n      \"purpose\": [\"description\": \"string\"],\n      \"timestamp\": \"2019-08-24T14:15:22Z\",\n      \"user\": [\n        \"email\": \"string\",\n        \"idNumber\": \"string\",\n        \"idType\": \"string\",\n        \"mobile\": \"string\"\n      ]\n    ],\n    \"signature\": [\"signature\": \"string\"]\n  ],\n  \"format\": \"pdf\",\n  \"txnId\": \"f7f1469c-29b0-4325-9dfc-c567200a70f7\"\n] as [String : Any]\n\nlet postData = JSONSerialization.data(withJSONObject: parameters, options: [])\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://apisetu.gov.in/dgecerttn/v3/sscer/certificate\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\nrequest.allHTTPHeaderFields = headers\nrequest.httpBody = postData as Data\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "sscer",
+        "framework": "apisetu.gov.in",
+        "functionality": "Class X Marksheet",
+        "api_arguments": {},
+        "description": "API to verify Class X Marksheet.",
+        "path": "/sscer/certificate",
+        "method": "post",
+        "lang": "swift",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Tamilnadu - Government Examinations (https://dgecert.tn.nic.in/) is issuing Mark Certificates through DigiLocker. These can be pulled by students into their DigiLocker accounts. Currently Class X (2016-2019) and XII (2016-2018) marksheets are available.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To verify my Class X marksheet, how do I use the Tamil Nadu State Board's (Tamil Nadu Directorate of Government Examinations) API?",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify my Class X marksheet, how do I use the Tamil Nadu State Board's (Tamil Nadu Directorate of Government Examinations) API?\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.119553900789381
+            },
+            {
+                "idx": 2,
+                "candidate": "To verify your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use their API, sscer, for a quick and reliable verification process.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify your Class X marksheet issued by Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu, please use their API, sscer, for a quick and reliable verification process.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.188401899630133
+            },
+            {
+                "idx": 3,
+                "candidate": "To check the authenticity of your Class X marksheet issued by Tamil Nadu State Board, make a request to their sscer API. For instance, pass your roll number and date of birth as parameters in the request. The API will then return your marksheet details if it's genuine.",
+                "input_text": "Functionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nPlease give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class XII Marksheet\nDescription: API to verify Class XII Marksheet.\nEndpoint: hscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n###Input:\nHey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of your Class X marksheet issued by Tamil Nadu State Board, make a request to their sscer API. For instance, pass your roll number and date of birth as parameters in the request. The API will then return your marksheet details if it's genuine.\n###Output:\nFunctionality: Class X Marksheet\nDescription: API to verify Class X Marksheet.\nEndpoint: sscer\nAPI: Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.2469315799320415
+            }
+        ],
+        "best_instruction": {
+            "idx": 1,
+            "candidate": "To verify my Class X marksheet, how do I use the Tamil Nadu State Board's (Tamil Nadu Directorate of Government Examinations) API?"
+        }
+    }
+]

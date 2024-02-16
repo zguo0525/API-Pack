@@ -1,0 +1,285 @@
+{
+    "openapi": "3.0.1",
+    "servers": [
+        {
+            "url": "https://ipgeolocation.abstractapi.com"
+        }
+    ],
+    "info": {
+        "description": "Abstract IP geolocation API allows developers to retrieve the region, country and city behind any IP worldwide. The API covers the geolocation of IPv4 and IPv6 addresses in 180+ countries worldwide. Extra information can be retrieved like the currency, flag or language associated to an IP.",
+        "title": "IP geolocation API",
+        "version": "1.0.0",
+        "x-apisguru-categories": [
+            "location"
+        ],
+        "x-logo": {
+            "url": "https://global-uploads.webflow.com/5ebbd0a566a3996636e55959/5ec2ba29feeeb05d69160e7b_webclip.png"
+        },
+        "x-origin": [
+            {
+                "format": "openapi",
+                "url": "https://documentation.abstractapi.com/ip-geolocation-openapi.json",
+                "version": "3.0"
+            }
+        ],
+        "x-providerName": "abstractapi.com",
+        "x-serviceName": "geolocation"
+    },
+    "externalDocs": {
+        "description": "API Documentation",
+        "url": "https://www.abstractapi.com/ip-geolocation-api#docs"
+    },
+    "paths": {
+        "/v1/": {
+            "get": {
+                "description": "Retrieve the location of an IP address",
+                "parameters": [
+                    {
+                        "explode": true,
+                        "in": "query",
+                        "name": "api_key",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "style": "form"
+                    },
+                    {
+                        "explode": true,
+                        "in": "query",
+                        "name": "ip_address",
+                        "required": false,
+                        "schema": {
+                            "example": "195.154.25.40",
+                            "type": "string"
+                        },
+                        "style": "form"
+                    },
+                    {
+                        "explode": true,
+                        "in": "query",
+                        "name": "fields",
+                        "required": false,
+                        "schema": {
+                            "example": "country,city,timezone",
+                            "type": "string"
+                        },
+                        "style": "form"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "0": {
+                                        "value": "{\"ip_address\":\"195.154.25.40\",\"city\":\"Paris\",\"city_geoname_id\":2988507,\"region\":\"Île-de-France\",\"region_iso_code\":\"IDF\",\"region_geoname_id\":3012874,\"postal_code\":\"75008\",\"country\":\"France\",\"country_code\":\"FR\",\"country_geoname_id\":3017382,\"country_is_eu\":true,\"continent\":\"Europe\",\"continent_code\":\"EU\",\"continent_geoname_id\":6255148,\"longitude\":2.4075,\"latitude\":48.8323,\"security\":{\"is_vpn\":false},\"timezone\":{\"name\":\"Europe/Paris\",\"abbreviation\":\"CEST\",\"gmt_offset\":2,\"current_time\":\"15:42:18\",\"is_dst\":true},\"flag\":{\"emoji\":\"<ë<÷\",\"unicode\":\"U+1F1EB U+1F1F7\",\"png\":\"https://static.abstractapi.com/country-flags/FR_flag.png\",\"svg\":\"https://static.abstractapi.com/country-flags/FR_flag.svg\"},\"currency\":{\"currency_name\":\"Euros\",\"currency_code\":\"EUR\"},\"connection\":{\"autonomous_system_number\":12876,\"autonomous_system_organization\":\"Online S.a.s.\",\"connection_type\":\"Corporate\",\"isp_name\":\"Online S.A.S.\",\"organization_name\":\"ONLINE\"}}"
+                                    }
+                                },
+                                "schema": {
+                                    "$ref": "#/components/schemas/inline_response_200"
+                                }
+                            }
+                        },
+                        "description": "Location of geolocated IP"
+                    }
+                },
+                "servers": [
+                    {
+                        "url": "https://ipgeolocation.abstractapi.com"
+                    }
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request GET \\\n  --url 'https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone'"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {\n  method: 'GET',\n  url: 'https://ipgeolocation.abstractapi.com/v1/',\n  qs: {\n    api_key: 'SOME_STRING_VALUE',\n    ip_address: '195.154.25.40',\n    fields: 'country,city,timezone'\n  }\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"ipgeolocation.abstractapi.com\")\n\nconn.request(\"GET\", \"/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"GET\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"GET\", \"https://ipgeolocation.abstractapi.com/v1/?api_key=SOME_STRING_VALUE&ip_address=195.154.25.40&fields=country%2Ccity%2Ctimezone\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "servers": [
+                {
+                    "url": "https://ipgeolocation.abstractapi.com"
+                }
+            ]
+        }
+    },
+    "components": {
+        "schemas": {
+            "inline_response_200": {
+                "properties": {
+                    "city": {
+                        "type": "string"
+                    },
+                    "city_geoname_id": {
+                        "type": "integer"
+                    },
+                    "connection": {
+                        "properties": {
+                            "autonomous_system_number": {
+                                "type": "integer"
+                            },
+                            "autonomous_system_organization": {
+                                "type": "string"
+                            },
+                            "connection_type": {
+                                "type": "string"
+                            },
+                            "isp_name": {
+                                "type": "string"
+                            },
+                            "organization_name": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "continent": {
+                        "type": "string"
+                    },
+                    "continent_code": {
+                        "type": "string"
+                    },
+                    "continent_geoname_id": {
+                        "type": "integer"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "country_code": {
+                        "type": "string"
+                    },
+                    "country_geoname_id": {
+                        "type": "integer"
+                    },
+                    "country_is_eu": {
+                        "type": "boolean"
+                    },
+                    "currency": {
+                        "properties": {
+                            "currency_code": {
+                                "type": "string"
+                            },
+                            "currency_name": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "flag": {
+                        "properties": {
+                            "emoji": {
+                                "type": "string"
+                            },
+                            "png": {
+                                "type": "string"
+                            },
+                            "svg": {
+                                "type": "string"
+                            },
+                            "unicode": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "ip_address": {
+                        "type": "string"
+                    },
+                    "latitude": {
+                        "type": "number"
+                    },
+                    "longitude": {
+                        "type": "number"
+                    },
+                    "postal_code": {
+                        "type": "string"
+                    },
+                    "region": {
+                        "type": "string"
+                    },
+                    "region_geoname_id": {
+                        "type": "integer"
+                    },
+                    "region_iso_code": {
+                        "type": "string"
+                    },
+                    "security": {
+                        "properties": {
+                            "is_vpn": {
+                                "type": "boolean"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "timezone": {
+                        "properties": {
+                            "abbreviation": {
+                                "type": "string"
+                            },
+                            "current_time": {
+                                "type": "string"
+                            },
+                            "gmt_offset": {
+                                "type": "integer"
+                            },
+                            "is_dst": {
+                                "type": "boolean"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    }
+}

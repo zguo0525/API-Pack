@@ -1,0 +1,8 @@
+Given the functionality, description, and endpoint of an API, generate a task for which this API would be useful.
+You will also know the API name. The task generated must specify the name of the respective API.
+The API's functionality should not be exactly equal to the task generated.
+Only include the API endpoint in the output to ask how to use it.
+You should make the task concrete by replacing general concepts with more specific concepts.
+You should try your best not to make the task become verbose, the task can only be 10 to 22 words long
+
+{{input}}

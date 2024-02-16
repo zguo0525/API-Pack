@@ -1,0 +1,43 @@
+Your task is to refine and enhance a user query that involves a specific API. The original query you'll work with includes key details about the API's functionality, description, endpoint, and name. Focus on these essential aspects when revising the query:
+
+1. **Integration of API Details:** Make sure the revised query includes relevant details about the API's functionality, description, and name, without directly mentioning the endpoint.
+
+2. **Grammar and Syntax Correction:** Analyze the original query for grammatical mistakes such as improper verb forms (e.g., 'can' followed by 's' or 'es') or misplaced punctuation (like commas or colons). Correct these to improve clarity and professionalism.
+
+3. **Relevance and Conciseness:** Eliminate any extraneous information from the original query. Strive for brevity while ensuring all critical details are included.
+
+4. **User-Centric Rewrite:** Rework the query to reflect a user's perspective, focusing on their specific needs and how the API can address those needs.
+
+For each query, you will receive:
+
+- **Input:** An original user query with API details.
+- **Your Task:** Revise the query based on the guidelines above.
+
+Example for Practice:
+
+### Input:
+Functionality: Search Ecards
+Description: Allows searching the inventory system for ecards.
+Endpoint: searchECards
+API: eCards Search API
+User query to refine: "Please tell me how to searches ecards with the eCards Search API."
+
+### Output (refined user query):
+"Can you guide me on how to search for ecards using the eCards Search API?"
+
+Another Example:
+
+### Input:
+Functionality: KPI of realized sales
+Description: Provides KPIs for documents issued, requires ACLs from /instances, and uses the 'typeKpi' parameter.
+Endpoint: getKPIs
+API: Blackbird Analytics
+User query to refine: "I need to certificates shows kpis related to all documents issued through blackbird. to use it you must have pass a list of acls retrieved by /instances and specify which kpi using “typekpi” parameter."
+
+### Output (refined user query):
+"How can I access KPIs for documents issued by Blackbird Analytics, and what are the required 'typeKpi' parameters?"
+
+Remember, the goal is to modify the user query to be clear, effective, and grammatically correct, fully showcasing how the user can leverage the specific API. 
+
+Now, here is your actual task:
+

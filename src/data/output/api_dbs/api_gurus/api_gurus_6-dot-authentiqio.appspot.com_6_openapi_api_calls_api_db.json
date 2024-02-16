@@ -1,0 +1,3082 @@
+[
+    {
+        "api_call": "curl --request DELETE \\\n  --url 'https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE'",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "cURL",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\")\n  .delete(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "Java",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {\n  method: 'DELETE',\n  url: 'https://6-dot-authentiqio.appspot.com/key',\n  qs: {\n    email: 'SOME_STRING_VALUE',\n    phone: 'SOME_STRING_VALUE',\n    code: 'SOME_STRING_VALUE'\n  }\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "Node",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"DELETE\", \"/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "Python",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\"\n\n\treq, _ := http.NewRequest(\"DELETE\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "go",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Delete.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "Ruby",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"DELETE\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "PHP",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"DELETE\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "swift",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"DELETE\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "libcurl",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"DELETE\", \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke_nosecret",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+        "path": "/key",
+        "method": "delete",
+        "lang": "javascript xhr",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request POST \\\n  --url https://6-dot-authentiqio.appspot.com/key",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "cURL",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "Java",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'POST', url: 'https://6-dot-authentiqio.appspot.com/key'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "Node",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/key\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "Python",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "go",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "Ruby",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "PHP",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "swift",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "libcurl",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/key\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_register",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key",
+        "method": "post",
+        "lang": "javascript xhr",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request DELETE \\\n  --url 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE'",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "cURL",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\")\n  .delete(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "Java",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {\n  method: 'DELETE',\n  url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D',\n  qs: {secret: 'SOME_STRING_VALUE'}\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "Node",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"DELETE\", \"/key/%7BPK%7D?secret=SOME_STRING_VALUE\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "Python",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\"\n\n\treq, _ := http.NewRequest(\"DELETE\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "go",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Delete.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "Ruby",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"DELETE\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "PHP",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"DELETE\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "swift",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"DELETE\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "libcurl",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"DELETE\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_revoke",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Revoke an Identity (Key) with a revocation secret",
+        "path": "/key/{PK}",
+        "method": "delete",
+        "lang": "javascript xhr",
+        "domain": [
+            "key",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request GET \\\n  --url https://6-dot-authentiqio.appspot.com/key/%7BPK%7D",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "cURL",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "Java",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "Node",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"GET\", \"/key/%7BPK%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "Python",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "go",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "Ruby",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "PHP",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "swift",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"GET\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "libcurl",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"GET\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Get public details of an Authentiq ID.\n",
+        "path": "/key/{PK}",
+        "method": "get",
+        "lang": "javascript xhr",
+        "domain": [
+            "key",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request HEAD \\\n  --url https://6-dot-authentiqio.appspot.com/key/%7BPK%7D",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "cURL",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n  .head()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "Java",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'HEAD', url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "Node",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"HEAD\", \"/key/%7BPK%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "Python",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\"\n\n\treq, _ := http.NewRequest(\"HEAD\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "go",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Head.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "Ruby",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"HEAD\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "PHP",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"HEAD\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "swift",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"HEAD\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "libcurl",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"HEAD\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD info on Authentiq ID\n",
+        "path": "/key/{PK}",
+        "method": "head",
+        "lang": "javascript xhr",
+        "domain": [
+            "key",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request POST \\\n  --url https://6-dot-authentiqio.appspot.com/key/%7BPK%7D",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "cURL",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "Java",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'POST', url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "Node",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/key/%7BPK%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "Python",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "go",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "Ruby",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "PHP",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "swift",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "libcurl",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "post",
+        "lang": "javascript xhr",
+        "domain": [
+            "key",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request PUT \\\n  --url https://6-dot-authentiqio.appspot.com/key/%7BPK%7D",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "cURL",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n  .put(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "Java",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'PUT', url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "Node",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"PUT\", \"/key/%7BPK%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "Python",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\"\n\n\treq, _ := http.NewRequest(\"PUT\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "go",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Put.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "Ruby",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"PUT\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "PHP",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"PUT\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "swift",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"PUT\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "libcurl",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"PUT\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "key_bind",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/key/{PK}",
+        "method": "put",
+        "lang": "javascript xhr",
+        "domain": [
+            "key",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request POST \\\n  --url 'https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE'",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "cURL",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "Java",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {\n  method: 'POST',\n  url: 'https://6-dot-authentiqio.appspot.com/login',\n  qs: {callback: 'SOME_STRING_VALUE'}\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "Node",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/login?callback=SOME_STRING_VALUE\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "Python",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "go",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "Ruby",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "PHP",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "swift",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "libcurl",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "push_login_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/login",
+        "method": "post",
+        "lang": "javascript xhr",
+        "domain": [
+            "login",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request POST \\\n  --url 'https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE'",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "cURL",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "Java",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {\n  method: 'POST',\n  url: 'https://6-dot-authentiqio.appspot.com/scope',\n  qs: {test: 'SOME_INTEGER_VALUE'}\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "Node",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/scope?test=SOME_INTEGER_VALUE\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "Python",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "go",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "Ruby",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "PHP",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "swift",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "libcurl",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_request",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope",
+        "method": "post",
+        "lang": "javascript xhr",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request DELETE \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "cURL",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .delete(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "Java",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'DELETE', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "Node",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"DELETE\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "Python",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"DELETE\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "go",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Delete.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "Ruby",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"DELETE\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "PHP",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"DELETE\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "swift",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"DELETE\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "libcurl",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"DELETE\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_delete",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "delete a verification job",
+        "path": "/scope/{job}",
+        "method": "delete",
+        "lang": "javascript xhr",
+        "domain": [
+            "scope",
+            "delete"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request GET \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "cURL",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "Java",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "Node",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"GET\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "Python",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "go",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "Ruby",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "PHP",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "swift",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"GET\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "libcurl",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"GET\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "get the status / current content of a verification job",
+        "path": "/scope/{job}",
+        "method": "get",
+        "lang": "javascript xhr",
+        "domain": [
+            "scope",
+            "get"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request HEAD \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "cURL",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .head()\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "Java",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'HEAD', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "Node",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"HEAD\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "Python",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"HEAD\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "go",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Head.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "Ruby",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"HEAD\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "PHP",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"HEAD\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "swift",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"HEAD\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "libcurl",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"HEAD\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_retrieve_head",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "HEAD to get the status of a verification job",
+        "path": "/scope/{job}",
+        "method": "head",
+        "lang": "javascript xhr",
+        "domain": [
+            "scope",
+            "head"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request POST \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "cURL",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "Java",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'POST', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "Node",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "Python",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "go",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "Ruby",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "PHP",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "swift",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "libcurl",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_confirm",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "this is a scope confirmation",
+        "path": "/scope/{job}",
+        "method": "post",
+        "lang": "javascript xhr",
+        "domain": [
+            "scope",
+            "post"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "curl --request PUT \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "cURL",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .put(null)\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "Java",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {method: 'PUT', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "Node",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"PUT\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "Python",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"PUT\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "go",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Put.new(url)\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "Ruby",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"PUT\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "PHP",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"PUT\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "swift",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"PUT\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "libcurl",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    {
+        "api_call": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"PUT\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);",
+        "api_name": "Authentiq API",
+        "api_provider": "6-dot-authentiqio.appspot.com",
+        "endpoint": "sign_update",
+        "framework": "6-dot-authentiqio.appspot.com",
+        "functionality": "",
+        "api_arguments": {},
+        "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+        "path": "/scope/{job}",
+        "method": "put",
+        "lang": "javascript xhr",
+        "domain": [
+            "scope",
+            "put"
+        ],
+        "api_description": "Strong authentication, without the passwords.",
+        "api_license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    }
+]

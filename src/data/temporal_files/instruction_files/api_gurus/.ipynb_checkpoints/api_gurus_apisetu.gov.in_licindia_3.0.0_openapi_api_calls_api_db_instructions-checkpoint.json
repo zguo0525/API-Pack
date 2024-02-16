@@ -1,0 +1,554 @@
+[
+    {
+        "api_call": "curl --request POST \\\n  --url https://apisetu.gov.in/licindia/v3/podoc/certificate \\\n  --header 'X-APISETU-APIKEY: REPLACE_KEY_VALUE' \\\n  --header 'content-type: application/json' \\\n  --data '{\"certificateParameters\":{\"DOB\":\"31-12-1980\",\"FullName\":\"Sunil Kumar\",\"PolDOB\":\"yyyy-mm-dd\",\"PolicyNo\":\"Enter Policy Number\"},\"consentArtifact\":{\"consent\":{\"consentId\":\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\",\"data\":{\"id\":\"string\"},\"dataConsumer\":{\"id\":\"string\"},\"dataProvider\":{\"id\":\"string\"},\"permission\":{\"access\":\"string\",\"dateRange\":{\"from\":\"2019-08-24T14:15:22Z\",\"to\":\"2019-08-24T14:15:22Z\"},\"frequency\":{\"repeats\":0,\"unit\":\"string\",\"value\":0}},\"purpose\":{\"description\":\"string\"},\"timestamp\":\"2019-08-24T14:15:22Z\",\"user\":{\"email\":\"string\",\"idNumber\":\"string\",\"idType\":\"string\",\"mobile\":\"string\"}},\"signature\":{\"signature\":\"string\"}},\"format\":\"pdf\",\"txnId\":\"f7f1469c-29b0-4325-9dfc-c567200a70f7\"}'",
+        "api_name": "Life Insurance Corporation of India",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "podoc",
+        "framework": "apisetu.gov.in",
+        "functionality": "Policy Document",
+        "api_arguments": {},
+        "description": "API to verify Policy Document.",
+        "path": "/podoc/certificate",
+        "method": "post",
+        "lang": "cURL",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Life Insurance policies issued by Life Insurance Corporation of India (https://www.licindia.in/) are available on DigiLocker and can be downloaded by citizens to their account.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use their Policy Document Verification API (podoc)?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use their Policy Document Verification API (podoc)?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.200597869787932
+            },
+            {
+                "idx": 2,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.2398044238779096
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you provide instructions on how to do this?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you provide instructions on how to do this?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.2068345117739443
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. How do I go about doing that?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. How do I go about doing that?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.395754961554963
+            },
+            {
+                "idx": 5,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API provided?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API provided?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.177046353154665
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API provided?"
+        }
+    },
+    {
+        "api_call": "OkHttpClient client = new OkHttpClient();\n\nMediaType mediaType = MediaType.parse(\"application/json\");\nRequestBody body = RequestBody.create(mediaType, \"{\\\"certificateParameters\\\":{\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"PolDOB\\\":\\\"yyyy-mm-dd\\\",\\\"PolicyNo\\\":\\\"Enter Policy Number\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\");\nRequest request = new Request.Builder()\n  .url(\"https://apisetu.gov.in/licindia/v3/podoc/certificate\")\n  .post(body)\n  .addHeader(\"X-APISETU-APIKEY\", \"REPLACE_KEY_VALUE\")\n  .addHeader(\"content-type\", \"application/json\")\n  .build();\n\nResponse response = client.newCall(request).execute();",
+        "api_name": "Life Insurance Corporation of India",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "podoc",
+        "framework": "apisetu.gov.in",
+        "functionality": "Policy Document",
+        "api_arguments": {},
+        "description": "API to verify Policy Document.",
+        "path": "/podoc/certificate",
+        "method": "post",
+        "lang": "Java",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Life Insurance policies issued by Life Insurance Corporation of India (https://www.licindia.in/) are available on DigiLocker and can be downloaded by citizens to their account.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the podoc API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the podoc API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.194795959592007
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.3563195005274897
+            },
+            {
+                "idx": 3,
+                "candidate": "To check the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API called podoc?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API called podoc?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.1787716376606454
+            },
+            {
+                "idx": 4,
+                "candidate": "To check the validity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document verification API (podoc)?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the validity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document verification API (podoc)?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.9638437951578704
+            },
+            {
+                "idx": 5,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, I would like to use their API. Could you please guide me on how to make a request to the API named podoc?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, I would like to use their API. Could you please guide me on how to make a request to the API named podoc?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -1.9502020161923186
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, I would like to use their API. Could you please guide me on how to make a request to the API named podoc?"
+        }
+    },
+    {
+        "api_call": "const request = require('request');\n\nconst options = {\n  method: 'POST',\n  url: 'https://apisetu.gov.in/licindia/v3/podoc/certificate',\n  headers: {'X-APISETU-APIKEY': 'REPLACE_KEY_VALUE', 'content-type': 'application/json'},\n  body: {\n    certificateParameters: {\n      DOB: '31-12-1980',\n      FullName: 'Sunil Kumar',\n      PolDOB: 'yyyy-mm-dd',\n      PolicyNo: 'Enter Policy Number'\n    },\n    consentArtifact: {\n      consent: {\n        consentId: 'ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba',\n        data: {id: 'string'},\n        dataConsumer: {id: 'string'},\n        dataProvider: {id: 'string'},\n        permission: {\n          access: 'string',\n          dateRange: {from: '2019-08-24T14:15:22Z', to: '2019-08-24T14:15:22Z'},\n          frequency: {repeats: 0, unit: 'string', value: 0}\n        },\n        purpose: {description: 'string'},\n        timestamp: '2019-08-24T14:15:22Z',\n        user: {email: 'string', idNumber: 'string', idType: 'string', mobile: 'string'}\n      },\n      signature: {signature: 'string'}\n    },\n    format: 'pdf',\n    txnId: 'f7f1469c-29b0-4325-9dfc-c567200a70f7'\n  },\n  json: true\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n",
+        "api_name": "Life Insurance Corporation of India",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "podoc",
+        "framework": "apisetu.gov.in",
+        "functionality": "Policy Document",
+        "api_arguments": {},
+        "description": "API to verify Policy Document.",
+        "path": "/podoc/certificate",
+        "method": "post",
+        "lang": "Node",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Life Insurance policies issued by Life Insurance Corporation of India (https://www.licindia.in/) are available on DigiLocker and can be downloaded by citizens to their account.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to verify a specific life insurance policy document. How do I use the Policy Document API from Life Insurance Corporation of India for this purpose?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify a specific life insurance policy document. How do I use the Policy Document API from Life Insurance Corporation of India for this purpose?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.298411746082679
+            },
+            {
+                "idx": 2,
+                "candidate": "To check the validity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API provided?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the validity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API provided?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.0888813154431527
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.3563195005274897
+            },
+            {
+                "idx": 4,
+                "candidate": "To check the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document Verification API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document Verification API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.230595720067256
+            },
+            {
+                "idx": 5,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use their policy document verification API (podoc)?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use their policy document verification API (podoc)?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.1639223193730746
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "To check the validity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API provided?"
+        }
+    },
+    {
+        "api_call": "import http.client\n\nconn = http.client.HTTPSConnection(\"apisetu.gov.in\")\n\npayload = \"{\\\"certificateParameters\\\":{\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"PolDOB\\\":\\\"yyyy-mm-dd\\\",\\\"PolicyNo\\\":\\\"Enter Policy Number\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\"\n\nheaders = {\n    'X-APISETU-APIKEY': \"REPLACE_KEY_VALUE\",\n    'content-type': \"application/json\"\n    }\n\nconn.request(\"POST\", \"/licindia/v3/podoc/certificate\", payload, headers)\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))",
+        "api_name": "Life Insurance Corporation of India",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "podoc",
+        "framework": "apisetu.gov.in",
+        "functionality": "Policy Document",
+        "api_arguments": {},
+        "description": "API to verify Policy Document.",
+        "path": "/podoc/certificate",
+        "method": "post",
+        "lang": "Python",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Life Insurance policies issued by Life Insurance Corporation of India (https://www.licindia.in/) are available on DigiLocker and can be downloaded by citizens to their account.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to verify a specific life insurance policy document. Can you help me use the API provided by the Life Insurance Corporation of India for this purpose? (Without mentioning the exact endpoint 'podoc')",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify a specific life insurance policy document. Can you help me use the API provided by the Life Insurance Corporation of India for this purpose? (Without mentioning the exact endpoint 'podoc')\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.5148225420194836
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you provide instructions on how to do this?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you provide instructions on how to do this?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.3724698838103695
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India API. Can you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India API. Can you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.1939318940200523
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. How can I do that?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. How can I do that?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.3776953335077313
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you provide instructions on how to do that?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you provide instructions on how to do that?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.20075594152462
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "I'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India API. Can you guide me through the process?"
+        }
+    },
+    {
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"strings\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://apisetu.gov.in/licindia/v3/podoc/certificate\"\n\n\tpayload := strings.NewReader(\"{\\\"certificateParameters\\\":{\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"PolDOB\\\":\\\"yyyy-mm-dd\\\",\\\"PolicyNo\\\":\\\"Enter Policy Number\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\")\n\n\treq, _ := http.NewRequest(\"POST\", url, payload)\n\n\treq.Header.Add(\"X-APISETU-APIKEY\", \"REPLACE_KEY_VALUE\")\n\treq.Header.Add(\"content-type\", \"application/json\")\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+        "api_name": "Life Insurance Corporation of India",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "podoc",
+        "framework": "apisetu.gov.in",
+        "functionality": "Policy Document",
+        "api_arguments": {},
+        "description": "API to verify Policy Document.",
+        "path": "/podoc/certificate",
+        "method": "post",
+        "lang": "go",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Life Insurance policies issued by Life Insurance Corporation of India (https://www.licindia.in/) are available on DigiLocker and can be downloaded by citizens to their account.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.2398044238779096
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to confirm the validity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to confirm the validity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.2418822355353214
+            },
+            {
+                "idx": 3,
+                "candidate": "To check the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document Verification API (podoc)?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document Verification API (podoc)?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.1304998493876024
+            },
+            {
+                "idx": 4,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.2398044238779096
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Could you provide me with instructions on how to do this?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Could you provide me with instructions on how to do this?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.3721856547687
+            }
+        ],
+        "best_instruction": {
+            "idx": 3,
+            "candidate": "To check the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document Verification API (podoc)?"
+        }
+    },
+    {
+        "api_call": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://apisetu.gov.in/licindia/v3/podoc/certificate\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\nrequest[\"X-APISETU-APIKEY\"] = 'REPLACE_KEY_VALUE'\nrequest[\"content-type\"] = 'application/json'\nrequest.body = \"{\\\"certificateParameters\\\":{\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"PolDOB\\\":\\\"yyyy-mm-dd\\\",\\\"PolicyNo\\\":\\\"Enter Policy Number\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\"\n\nresponse = http.request(request)\nputs response.read_body",
+        "api_name": "Life Insurance Corporation of India",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "podoc",
+        "framework": "apisetu.gov.in",
+        "functionality": "Policy Document",
+        "api_arguments": {},
+        "description": "API to verify Policy Document.",
+        "path": "/podoc/certificate",
+        "method": "post",
+        "lang": "Ruby",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Life Insurance policies issued by Life Insurance Corporation of India (https://www.licindia.in/) are available on DigiLocker and can be downloaded by citizens to their account.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To check the authenticity of my Life Insurance Corporation of India policy document, could you guide me on how to use their Policy Document Verification API (podoc)?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the authenticity of my Life Insurance Corporation of India policy document, could you guide me on how to use their Policy Document Verification API (podoc)?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.184021404426185
+            },
+            {
+                "idx": 2,
+                "candidate": "I'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India API. Can you provide instructions on how to do this?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India API. Can you provide instructions on how to do this?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.2092076612210283
+            },
+            {
+                "idx": 3,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.3563195005274897
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.3563195005274897
+            },
+            {
+                "idx": 5,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API provided?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API provided?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.177046353154665
+            }
+        ],
+        "best_instruction": {
+            "idx": 5,
+            "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the API provided?"
+        }
+    },
+    {
+        "api_call": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://apisetu.gov.in/licindia/v3/podoc/certificate\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n  CURLOPT_POSTFIELDS => \"{\\\"certificateParameters\\\":{\\\"DOB\\\":\\\"31-12-1980\\\",\\\"FullName\\\":\\\"Sunil Kumar\\\",\\\"PolDOB\\\":\\\"yyyy-mm-dd\\\",\\\"PolicyNo\\\":\\\"Enter Policy Number\\\"},\\\"consentArtifact\\\":{\\\"consent\\\":{\\\"consentId\\\":\\\"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\\\",\\\"data\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataConsumer\\\":{\\\"id\\\":\\\"string\\\"},\\\"dataProvider\\\":{\\\"id\\\":\\\"string\\\"},\\\"permission\\\":{\\\"access\\\":\\\"string\\\",\\\"dateRange\\\":{\\\"from\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"to\\\":\\\"2019-08-24T14:15:22Z\\\"},\\\"frequency\\\":{\\\"repeats\\\":0,\\\"unit\\\":\\\"string\\\",\\\"value\\\":0}},\\\"purpose\\\":{\\\"description\\\":\\\"string\\\"},\\\"timestamp\\\":\\\"2019-08-24T14:15:22Z\\\",\\\"user\\\":{\\\"email\\\":\\\"string\\\",\\\"idNumber\\\":\\\"string\\\",\\\"idType\\\":\\\"string\\\",\\\"mobile\\\":\\\"string\\\"}},\\\"signature\\\":{\\\"signature\\\":\\\"string\\\"}},\\\"format\\\":\\\"pdf\\\",\\\"txnId\\\":\\\"f7f1469c-29b0-4325-9dfc-c567200a70f7\\\"}\",\n  CURLOPT_HTTPHEADER => [\n    \"X-APISETU-APIKEY: REPLACE_KEY_VALUE\",\n    \"content-type: application/json\"\n  ],\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}",
+        "api_name": "Life Insurance Corporation of India",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "podoc",
+        "framework": "apisetu.gov.in",
+        "functionality": "Policy Document",
+        "api_arguments": {},
+        "description": "API to verify Policy Document.",
+        "path": "/podoc/certificate",
+        "method": "post",
+        "lang": "PHP",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Life Insurance policies issued by Life Insurance Corporation of India (https://www.licindia.in/) are available on DigiLocker and can be downloaded by citizens to their account.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document Verification API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document Verification API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.276811888106732
+            },
+            {
+                "idx": 2,
+                "candidate": "To check the validity of my life insurance policy document, I would like to use the API provided by the Life Insurance Corporation of India. Can you guide me through the process of using this API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo check the validity of my life insurance policy document, I would like to use the API provided by the Life Insurance Corporation of India. Can you guide me through the process of using this API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.0006820584279383
+            },
+            {
+                "idx": 3,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the podoc API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the podoc API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.194795959592007
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to check the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to check the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Can you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.273257119655338
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India's API. Could you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to check the validity of my life insurance policy document using the Life Insurance Corporation of India's API. Could you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.213711368414651
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "To check the validity of my life insurance policy document, I would like to use the API provided by the Life Insurance Corporation of India. Can you guide me through the process of using this API?"
+        }
+    },
+    {
+        "api_call": "import Foundation\n\nlet headers = [\n  \"X-APISETU-APIKEY\": \"REPLACE_KEY_VALUE\",\n  \"content-type\": \"application/json\"\n]\nlet parameters = [\n  \"certificateParameters\": [\n    \"DOB\": \"31-12-1980\",\n    \"FullName\": \"Sunil Kumar\",\n    \"PolDOB\": \"yyyy-mm-dd\",\n    \"PolicyNo\": \"Enter Policy Number\"\n  ],\n  \"consentArtifact\": [\n    \"consent\": [\n      \"consentId\": \"ea9c43aa-7f5a-4bf3-a0be-e1caa24737ba\",\n      \"data\": [\"id\": \"string\"],\n      \"dataConsumer\": [\"id\": \"string\"],\n      \"dataProvider\": [\"id\": \"string\"],\n      \"permission\": [\n        \"access\": \"string\",\n        \"dateRange\": [\n          \"from\": \"2019-08-24T14:15:22Z\",\n          \"to\": \"2019-08-24T14:15:22Z\"\n        ],\n        \"frequency\": [\n          \"repeats\": 0,\n          \"unit\": \"string\",\n          \"value\": 0\n        ]\n      ],\n      \"purpose\": [\"description\": \"string\"],\n      \"timestamp\": \"2019-08-24T14:15:22Z\",\n      \"user\": [\n        \"email\": \"string\",\n        \"idNumber\": \"string\",\n        \"idType\": \"string\",\n        \"mobile\": \"string\"\n      ]\n    ],\n    \"signature\": [\"signature\": \"string\"]\n  ],\n  \"format\": \"pdf\",\n  \"txnId\": \"f7f1469c-29b0-4325-9dfc-c567200a70f7\"\n] as [String : Any]\n\nlet postData = JSONSerialization.data(withJSONObject: parameters, options: [])\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://apisetu.gov.in/licindia/v3/podoc/certificate\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\nrequest.allHTTPHeaderFields = headers\nrequest.httpBody = postData as Data\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()",
+        "api_name": "Life Insurance Corporation of India",
+        "api_provider": "apisetu.gov.in",
+        "endpoint": "podoc",
+        "framework": "apisetu.gov.in",
+        "functionality": "Policy Document",
+        "api_arguments": {},
+        "description": "API to verify Policy Document.",
+        "path": "/podoc/certificate",
+        "method": "post",
+        "lang": "swift",
+        "domain": [
+            "APIs"
+        ],
+        "api_description": "Life Insurance policies issued by Life Insurance Corporation of India (https://www.licindia.in/) are available on DigiLocker and can be downloaded by citizens to their account.",
+        "api_license": "",
+        "instruction_candidates": [
+            {
+                "idx": 1,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Could you please provide instructions on how to do this?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the Life Insurance Corporation of India's API. Could you please provide instructions on how to do this?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.3778630427338188
+            },
+            {
+                "idx": 2,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the podoc API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the podoc API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.194795959592007
+            },
+            {
+                "idx": 3,
+                "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document API?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nTo verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the Policy Document API?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.2398044238779096
+            },
+            {
+                "idx": 4,
+                "candidate": "I'd like to check the authenticity of my life insurance policy document using the Life Insurance Corporation of India's podoc API. Can you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to check the authenticity of my life insurance policy document using the Life Insurance Corporation of India's podoc API. Can you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.2741001429137238
+            },
+            {
+                "idx": 5,
+                "candidate": "I'd like to verify the authenticity of my life insurance policy document using the API provided by the Life Insurance Corporation of India. Can you guide me through the process?",
+                "input_text": "Functionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "gen_tokens_mean": 0.0,
+                "back_trans_input": "You will be given a user query for which an endpoint is useful.\nIn addition, you will be given the endpoint's identifier, the endpoint's functionality, the endpoint's description, and the name of the API this endpoint belongs to.\nYour job is to re-generate the endpoint's identifier, functionality, description, and API name based on the given user query input.\n\nBelow are some examples:\n\n###Input:\nI need to verify policy document with the Life Insurance Corporation of India. Please help me with that.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nI need to know how to verify policy document with the Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n###Input:\nPlease give me an example of how to use the endpoint podoc from Life Insurance Corporation of India.\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India\n\n\nHere is the actual task for you:\n\n###Input:\nI'd like to verify the authenticity of my life insurance policy document using the API provided by the Life Insurance Corporation of India. Can you guide me through the process?\n###Output:\nFunctionality: Policy Document\nDescription: API to verify Policy Document.\nEndpoint: podoc\nAPI: Life Insurance Corporation of India",
+                "back_trans_gen_text": "empty",
+                "back_trans_input_tokens_mean": -2.3556496995360563
+            }
+        ],
+        "best_instruction": {
+            "idx": 2,
+            "candidate": "To verify the authenticity of my Life Insurance Corporation of India policy document, could you please guide me on how to use the podoc API?"
+        }
+    }
+]

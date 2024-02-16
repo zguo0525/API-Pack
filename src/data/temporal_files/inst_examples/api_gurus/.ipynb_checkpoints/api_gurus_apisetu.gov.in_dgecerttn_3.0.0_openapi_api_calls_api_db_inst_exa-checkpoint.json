@@ -1,0 +1,18 @@
+{
+    "list": [
+        {
+            "API name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+            "functionality": "Class XII Marksheet",
+            "description": "API to verify Class XII Marksheet.",
+            "endpoint": "hscer",
+            "output": "Please give me an example of how to use the endpoint hscer from Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu."
+        },
+        {
+            "API name": "Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu",
+            "functionality": "Class X Marksheet",
+            "description": "API to verify Class X Marksheet.",
+            "endpoint": "sscer",
+            "output": "Hey, tell me how to verify class x marksheet with the Tamil Nadu State Board (Tamil Nadu Directorate of Government Examinations), Tamil Nadu."
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+###Instruction:{{{instruction}}}
+###Output:
+<<<domain>>>:{{{domain}}}
+<<<api_call>>>:{{{api_call}}}
+<<<api_provider>>>:{{{api_provider}}}
+<<<lang>>>:{{{lang}}}
+<<<code>>>:
+{{{code}}}

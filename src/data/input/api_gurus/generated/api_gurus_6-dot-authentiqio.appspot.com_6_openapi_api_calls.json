@@ -1,0 +1,1753 @@
+{
+    "openapi": "3.0.0",
+    "servers": [
+        {
+            "url": "https://6-dot-authentiqio.appspot.com"
+        }
+    ],
+    "info": {
+        "contact": {
+            "email": "hello@authentiq.com",
+            "name": "Authentiq team",
+            "url": "http://authentiq.io/support"
+        },
+        "description": "Strong authentication, without the passwords.",
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "termsOfService": "http://authentiq.com/terms/",
+        "title": "Authentiq API",
+        "version": "6",
+        "x-apisguru-categories": [
+            "security"
+        ],
+        "x-logo": {
+            "backgroundColor": "#F26641",
+            "url": "https://www.authentiq.com/theme/images/authentiq-logo-a-inverse.svg"
+        },
+        "x-origin": [
+            {
+                "format": "openapi",
+                "url": "https://raw.githubusercontent.com/AuthentiqID/authentiq-docs/master/docs/swagger/issuer.yaml",
+                "version": "3.0"
+            }
+        ],
+        "x-providerName": "6-dot-authentiqio.appspot.com"
+    },
+    "paths": {
+        "/key": {
+            "delete": {
+                "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+                "operationId": "key_revoke_nosecret",
+                "parameters": [
+                    {
+                        "description": "primary email associated to Key (ID)",
+                        "in": "query",
+                        "name": "email",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "description": "primary phone number, international representation",
+                        "in": "query",
+                        "name": "phone",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "description": "verification code sent by email",
+                        "in": "query",
+                        "name": "code",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "description": "pending or done",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successfully deleted"
+                    },
+                    "401": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Authentication error `auth-error`"
+                    },
+                    "404": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Unknown key `unknown-key`"
+                    },
+                    "409": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Confirm with code sent `confirm-first`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "key",
+                    "delete"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request DELETE \\\n  --url 'https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE'"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\")\n  .delete(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {\n  method: 'DELETE',\n  url: 'https://6-dot-authentiqio.appspot.com/key',\n  qs: {\n    email: 'SOME_STRING_VALUE',\n    phone: 'SOME_STRING_VALUE',\n    code: 'SOME_STRING_VALUE'\n  }\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"DELETE\", \"/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\"\n\n\treq, _ := http.NewRequest(\"DELETE\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Delete.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"DELETE\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"DELETE\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"DELETE\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"DELETE\", \"https://6-dot-authentiqio.appspot.com/key?email=SOME_STRING_VALUE&phone=SOME_STRING_VALUE&code=SOME_STRING_VALUE\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "post": {
+                "description": "Register a new ID `JWT(sub, devtoken)`\n\nv5: `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+                "operationId": "key_register",
+                "requestBody": {
+                    "content": {
+                        "application/jwt": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AuthentiqID"
+                            }
+                        }
+                    },
+                    "description": "Authentiq ID to register",
+                    "required": true
+                },
+                "responses": {
+                    "201": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "secret": {
+                                            "description": "revoke key",
+                                            "type": "string"
+                                        },
+                                        "status": {
+                                            "description": "registered",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successfully registered"
+                    },
+                    "409": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Key already registered `duplicate-key`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "key",
+                    "post"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request POST \\\n  --url https://6-dot-authentiqio.appspot.com/key"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'POST', url: 'https://6-dot-authentiqio.appspot.com/key'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/key\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/key\");\n\nxhr.send(data);"
+                    }
+                ]
+            }
+        },
+        "/key/{PK}": {
+            "delete": {
+                "description": "Revoke an Identity (Key) with a revocation secret",
+                "operationId": "key_revoke",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/PK"
+                    },
+                    {
+                        "description": "revokation secret",
+                        "in": "query",
+                        "name": "secret",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "description": "done",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successful response"
+                    },
+                    "401": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Key not found / wrong code `auth-error`"
+                    },
+                    "404": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Unknown key `unknown-key`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "key",
+                    "delete"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request DELETE \\\n  --url 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE'"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\")\n  .delete(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {\n  method: 'DELETE',\n  url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D',\n  qs: {secret: 'SOME_STRING_VALUE'}\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"DELETE\", \"/key/%7BPK%7D?secret=SOME_STRING_VALUE\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\"\n\n\treq, _ := http.NewRequest(\"DELETE\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Delete.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"DELETE\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"DELETE\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"DELETE\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"DELETE\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D?secret=SOME_STRING_VALUE\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "get": {
+                "description": "Get public details of an Authentiq ID.\n",
+                "operationId": "key_retrieve",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/PK"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "since": {
+                                            "format": "date-time",
+                                            "type": "string"
+                                        },
+                                        "status": {
+                                            "type": "string"
+                                        },
+                                        "sub": {
+                                            "description": "base64safe encoded public signing key",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "JWT",
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successfully retrieved"
+                    },
+                    "404": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Unknown key `unknown-key`"
+                    },
+                    "410": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Key is revoked (gone). `revoked-key`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "key",
+                    "get"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request GET \\\n  --url https://6-dot-authentiqio.appspot.com/key/%7BPK%7D"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"GET\", \"/key/%7BPK%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"GET\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"GET\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "head": {
+                "description": "HEAD info on Authentiq ID\n",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/PK"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Key exists"
+                    },
+                    "404": {
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Unknown key `unknown-key`"
+                    },
+                    "410": {
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Key is revoked `revoked-key`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "key",
+                    "head"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request HEAD \\\n  --url https://6-dot-authentiqio.appspot.com/key/%7BPK%7D"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n  .head()\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'HEAD', url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"HEAD\", \"/key/%7BPK%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\"\n\n\treq, _ := http.NewRequest(\"HEAD\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Head.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"HEAD\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"HEAD\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"HEAD\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"HEAD\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "post": {
+                "description": "update properties of an Authentiq ID.\n(not operational in v4; use PUT for now)\n\nv5: POST issuer-signed email & phone scopes in\na self-signed JWT\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+                "operationId": "key_update",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/PK"
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/jwt": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AuthentiqID"
+                            }
+                        }
+                    },
+                    "description": "Authentiq ID to register",
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "description": "confirmed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successfully updated"
+                    },
+                    "404": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Unknown key `unknown-key`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "key",
+                    "post"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request POST \\\n  --url https://6-dot-authentiqio.appspot.com/key/%7BPK%7D"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'POST', url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/key/%7BPK%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "put": {
+                "description": "Update Authentiq ID by replacing the object.\n\nv4: `JWT(sub,email,phone)` to bind email/phone hash; \n\nv5: POST issuer-signed email & phone scopes\nand PUT to update registration `JWT(sub, pk, devtoken, ...)`\n\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+                "operationId": "key_bind",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/PK"
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/jwt": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AuthentiqID"
+                            }
+                        }
+                    },
+                    "description": "Authentiq ID to register",
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "description": "confirmed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successfully updated"
+                    },
+                    "404": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Unknown key `unknown-key`"
+                    },
+                    "409": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Already bound to another key `duplicate-hash`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "key",
+                    "put"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request PUT \\\n  --url https://6-dot-authentiqio.appspot.com/key/%7BPK%7D"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n  .put(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'PUT', url: 'https://6-dot-authentiqio.appspot.com/key/%7BPK%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"PUT\", \"/key/%7BPK%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\"\n\n\treq, _ := http.NewRequest(\"PUT\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Put.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"PUT\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"PUT\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"PUT\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"PUT\", \"https://6-dot-authentiqio.appspot.com/key/%7BPK%7D\");\n\nxhr.send(data);"
+                    }
+                ]
+            }
+        },
+        "/login": {
+            "post": {
+                "description": "push sign-in request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+                "operationId": "push_login_request",
+                "parameters": [
+                    {
+                        "description": "URI App will connect to",
+                        "in": "query",
+                        "name": "callback",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/jwt": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PushToken"
+                            }
+                        }
+                    },
+                    "description": "Push Token.",
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "description": "sent",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successful response"
+                    },
+                    "401": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Unauthorized for this callback audience `aud-error` or JWT should be self-signed `auth-error`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "login",
+                    "post"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request POST \\\n  --url 'https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE'"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {\n  method: 'POST',\n  url: 'https://6-dot-authentiqio.appspot.com/login',\n  qs: {callback: 'SOME_STRING_VALUE'}\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/login?callback=SOME_STRING_VALUE\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/login?callback=SOME_STRING_VALUE\");\n\nxhr.send(data);"
+                    }
+                ]
+            }
+        },
+        "/scope": {
+            "post": {
+                "description": "scope verification request\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+                "operationId": "sign_request",
+                "parameters": [
+                    {
+                        "description": "test only mode, using test issuer",
+                        "in": "query",
+                        "name": "test",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/jwt": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Claims"
+                            }
+                        }
+                    },
+                    "description": "Claims of scope",
+                    "required": true
+                },
+                "responses": {
+                    "201": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "job": {
+                                            "description": "20-character ID",
+                                            "type": "string"
+                                        },
+                                        "status": {
+                                            "description": "waiting",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successful response"
+                    },
+                    "429": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Too Many Requests on same address / number `rate-limit`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "scope",
+                    "post"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request POST \\\n  --url 'https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE'"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {\n  method: 'POST',\n  url: 'https://6-dot-authentiqio.appspot.com/scope',\n  qs: {test: 'SOME_INTEGER_VALUE'}\n};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/scope?test=SOME_INTEGER_VALUE\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/scope?test=SOME_INTEGER_VALUE\");\n\nxhr.send(data);"
+                    }
+                ]
+            }
+        },
+        "/scope/{job}": {
+            "delete": {
+                "description": "delete a verification job",
+                "operationId": "sign_delete",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/JobID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "description": "done",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successfully deleted"
+                    },
+                    "404": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Job not found `unknown-job`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "scope",
+                    "delete"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request DELETE \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .delete(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'DELETE', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"DELETE\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"DELETE\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Delete.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"DELETE\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"DELETE\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"DELETE\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"DELETE\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "get": {
+                "description": "get the status / current content of a verification job",
+                "operationId": "sign_retrieve",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/JobID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "exp": {
+                                            "type": "integer"
+                                        },
+                                        "field": {
+                                            "type": "string"
+                                        },
+                                        "sub": {
+                                            "description": "base64safe encoded public signing key",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "JWT",
+                                    "type": "object"
+                                }
+                            },
+                            "application/jwt": {
+                                "schema": {
+                                    "properties": {
+                                        "exp": {
+                                            "type": "integer"
+                                        },
+                                        "field": {
+                                            "type": "string"
+                                        },
+                                        "sub": {
+                                            "description": "base64safe encoded public signing key",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "JWT",
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successful response (JWT)"
+                    },
+                    "204": {
+                        "description": "Confirmed, waiting for signing"
+                    },
+                    "404": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            },
+                            "application/jwt": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Job not found `unknown-job`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "scope",
+                    "get"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request GET \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"GET\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"GET\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"GET\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "head": {
+                "description": "HEAD to get the status of a verification job",
+                "operationId": "sign_retrieve_head",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/JobID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Confirmed and signed"
+                    },
+                    "204": {
+                        "description": "Confirmed, waiting for signing"
+                    },
+                    "404": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Job not found `unknown-job`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "scope",
+                    "head"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request HEAD \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .head()\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'HEAD', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"HEAD\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"HEAD\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Head.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"HEAD\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"HEAD\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"HEAD\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"HEAD\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "post": {
+                "description": "this is a scope confirmation",
+                "operationId": "sign_confirm",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/JobID"
+                    }
+                ],
+                "responses": {
+                    "202": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "description": "confirmed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successfully confirmed"
+                    },
+                    "401": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Confirmation error `auth-error`"
+                    },
+                    "404": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Job not found `unknown-job`"
+                    },
+                    "405": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "JWT POSTed to scope `not-supported`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "scope",
+                    "post"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request POST \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .post(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'POST', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"POST\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"POST\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Post.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"POST\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"POST\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"POST\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"POST\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);"
+                    }
+                ]
+            },
+            "put": {
+                "description": "authority updates a JWT with its signature\nSee: https://github.com/skion/authentiq/wiki/JWT-Examples\n",
+                "operationId": "sign_update",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/JobID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/jwt": {
+                                "schema": {
+                                    "properties": {
+                                        "jwt": {
+                                            "description": "result is JWT or JSON??",
+                                            "type": "string"
+                                        },
+                                        "status": {
+                                            "description": "ready",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Successfully updated"
+                    },
+                    "404": {
+                        "content": {
+                            "application/jwt": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Job not found `unknown-job`"
+                    },
+                    "409": {
+                        "content": {
+                            "application/jwt": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        },
+                        "description": "Job not confirmed yet `confirm-first`"
+                    },
+                    "default": {
+                        "$ref": "#/components/responses/ErrorResponse"
+                    }
+                },
+                "tags": [
+                    "scope",
+                    "put"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request PUT \\\n  --url https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n  .put(null)\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'PUT', url: 'https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"6-dot-authentiqio.appspot.com\")\n\nconn.request(\"PUT\", \"/scope/%7Bjob%7D\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\"\n\n\treq, _ := http.NewRequest(\"PUT\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Put.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"PUT\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"PUT\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"PUT\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"PUT\", \"https://6-dot-authentiqio.appspot.com/scope/%7Bjob%7D\");\n\nxhr.send(data);"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "parameters": {
+            "JobID": {
+                "description": "Job ID (20 chars)",
+                "in": "path",
+                "name": "job",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "PK": {
+                "description": "Public Signing Key - Authentiq ID (43 chars)",
+                "in": "path",
+                "name": "PK",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            }
+        },
+        "requestBodies": {
+            "AuthentiqID": {
+                "content": {
+                    "application/jwt": {
+                        "schema": {
+                            "$ref": "#/components/schemas/AuthentiqID"
+                        }
+                    }
+                },
+                "description": "Authentiq ID to register",
+                "required": true
+            }
+        },
+        "responses": {
+            "ErrorResponse": {
+                "content": {
+                    "*/*": {
+                        "schema": {
+                            "$ref": "#/components/schemas/Error"
+                        }
+                    }
+                },
+                "description": "Error response"
+            }
+        },
+        "schemas": {
+            "AuthentiqID": {
+                "description": "Authentiq ID in JWT format, self-signed.\n",
+                "properties": {
+                    "devtoken": {
+                        "description": "device token for push messages",
+                        "type": "string"
+                    },
+                    "sub": {
+                        "description": "UUID and public signing key",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "sub"
+                ]
+            },
+            "Claims": {
+                "description": "Claim in JWT format, self- or issuer-signed. \n",
+                "properties": {
+                    "email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "phone": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "scope": {
+                        "description": "claim scope",
+                        "type": "string"
+                    },
+                    "sub": {
+                        "description": "UUID",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "sub",
+                    "scope"
+                ]
+            },
+            "Error": {
+                "properties": {
+                    "detail": {
+                        "type": "string"
+                    },
+                    "error": {
+                        "type": "integer"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "unique uri for this error",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "error"
+                ]
+            },
+            "PushToken": {
+                "description": "PushToken in JWT format, self-signed. \n",
+                "properties": {
+                    "aud": {
+                        "description": "audience (URI)",
+                        "type": "string"
+                    },
+                    "exp": {
+                        "type": "integer"
+                    },
+                    "iat": {
+                        "type": "integer"
+                    },
+                    "iss": {
+                        "description": "issuer (URI)",
+                        "type": "string"
+                    },
+                    "nbf": {
+                        "type": "integer"
+                    },
+                    "sub": {
+                        "description": "UUID and public signing key",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "sub",
+                    "iss",
+                    "aud"
+                ]
+            }
+        }
+    }
+}

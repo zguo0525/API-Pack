@@ -1,0 +1,194 @@
+{
+    "swagger": "2.0",
+    "schemes": [
+        "https",
+        "http"
+    ],
+    "host": "1forge.com",
+    "basePath": "/forex-quotes",
+    "info": {
+        "contact": {
+            "email": "contact@1forge.com",
+            "name": "1Forge",
+            "url": "http://1forge.com"
+        },
+        "description": "Stock and Forex Data and Realtime Quotes",
+        "title": "1Forge Finance APIs",
+        "version": "0.0.1",
+        "x-apisguru-categories": [
+            "financial"
+        ],
+        "x-logo": {
+            "backgroundColor": "#24292e",
+            "url": "https://1forge.com/assets/images/f-blue.svg"
+        },
+        "x-origin": [
+            {
+                "format": "swagger",
+                "url": "http://1forge.com/openapi.json",
+                "version": "2.0"
+            }
+        ],
+        "x-providerName": "1forge.com"
+    },
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/quotes": {
+            "get": {
+                "description": "Get quotes",
+                "externalDocs": {
+                    "description": "Find out more",
+                    "url": "http://1forge.com/forex-data-api"
+                },
+                "responses": {
+                    "200": {
+                        "description": "A list of quotes"
+                    }
+                },
+                "summary": "Get quotes for all symbols",
+                "tags": [
+                    "forex",
+                    "finance",
+                    "quotes"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request GET \\\n  --url https://1forge.com/forex-quotes/quotes"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://1forge.com/forex-quotes/quotes\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://1forge.com/forex-quotes/quotes'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"1forge.com\")\n\nconn.request(\"GET\", \"/forex-quotes/quotes\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://1forge.com/forex-quotes/quotes\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://1forge.com/forex-quotes/quotes\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://1forge.com/forex-quotes/quotes\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://1forge.com/forex-quotes/quotes\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"GET\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://1forge.com/forex-quotes/quotes\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"GET\", \"https://1forge.com/forex-quotes/quotes\");\n\nxhr.send(data);"
+                    }
+                ]
+            }
+        },
+        "/symbols": {
+            "get": {
+                "description": "Symbol List",
+                "externalDocs": {
+                    "description": "Find out more",
+                    "url": "http://1forge.com/forex-data-api"
+                },
+                "responses": {
+                    "200": {
+                        "description": "A list of symbols",
+                        "schema": {
+                            "example": [
+                                "EURUSD",
+                                "GBPJPY",
+                                "AUDUSD"
+                            ],
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        }
+                    }
+                },
+                "summary": "Get a list of symbols for which we provide real-time quotes",
+                "tags": [
+                    "forex",
+                    "finance",
+                    "quotes"
+                ],
+                "api_calls": [
+                    {
+                        "id": "shell_curl",
+                        "title": "Shell + Curl",
+                        "content": "curl --request GET \\\n  --url https://1forge.com/forex-quotes/symbols"
+                    },
+                    {
+                        "id": "java_okhttp",
+                        "title": "Java + Okhttp",
+                        "content": "OkHttpClient client = new OkHttpClient();\n\nRequest request = new Request.Builder()\n  .url(\"https://1forge.com/forex-quotes/symbols\")\n  .get()\n  .build();\n\nResponse response = client.newCall(request).execute();"
+                    },
+                    {
+                        "id": "node_request",
+                        "title": "Node + Request",
+                        "content": "const request = require('request');\n\nconst options = {method: 'GET', url: 'https://1forge.com/forex-quotes/symbols'};\n\nrequest(options, function (error, response, body) {\n  if (error) throw new Error(error);\n\n  console.log(body);\n});\n"
+                    },
+                    {
+                        "id": "python_python3",
+                        "title": "Python + Python3",
+                        "content": "import http.client\n\nconn = http.client.HTTPSConnection(\"1forge.com\")\n\nconn.request(\"GET\", \"/forex-quotes/symbols\")\n\nres = conn.getresponse()\ndata = res.read()\n\nprint(data.decode(\"utf-8\"))"
+                    },
+                    {
+                        "id": "go_native",
+                        "title": "Go + Native",
+                        "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"https://1forge.com/forex-quotes/symbols\"\n\n\treq, _ := http.NewRequest(\"GET\", url, nil)\n\n\tres, _ := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody, _ := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}"
+                    },
+                    {
+                        "id": "ruby_native",
+                        "title": "Ruby + Native",
+                        "content": "require 'uri'\nrequire 'net/http'\nrequire 'openssl'\n\nurl = URI(\"https://1forge.com/forex-quotes/symbols\")\n\nhttp = Net::HTTP.new(url.host, url.port)\nhttp.use_ssl = true\nhttp.verify_mode = OpenSSL::SSL::VERIFY_NONE\n\nrequest = Net::HTTP::Get.new(url)\n\nresponse = http.request(request)\nputs response.read_body"
+                    },
+                    {
+                        "id": "php_curl",
+                        "title": "Php + Curl",
+                        "content": "<?php\n\n$curl = curl_init();\n\ncurl_setopt_array($curl, [\n  CURLOPT_URL => \"https://1forge.com/forex-quotes/symbols\",\n  CURLOPT_RETURNTRANSFER => true,\n  CURLOPT_ENCODING => \"\",\n  CURLOPT_MAXREDIRS => 10,\n  CURLOPT_TIMEOUT => 30,\n  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,\n  CURLOPT_CUSTOMREQUEST => \"GET\",\n]);\n\n$response = curl_exec($curl);\n$err = curl_error($curl);\n\ncurl_close($curl);\n\nif ($err) {\n  echo \"cURL Error #:\" . $err;\n} else {\n  echo $response;\n}"
+                    },
+                    {
+                        "id": "swift_nsurlsession",
+                        "title": "Swift + Nsurlsession",
+                        "content": "import Foundation\n\nlet request = NSMutableURLRequest(url: NSURL(string: \"https://1forge.com/forex-quotes/symbols\")! as URL,\n                                        cachePolicy: .useProtocolCachePolicy,\n                                    timeoutInterval: 10.0)\nrequest.httpMethod = \"GET\"\n\nlet session = URLSession.shared\nlet dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in\n  if (error != nil) {\n    print(error)\n  } else {\n    let httpResponse = response as? HTTPURLResponse\n    print(httpResponse)\n  }\n})\n\ndataTask.resume()"
+                    },
+                    {
+                        "id": "c_libcurl",
+                        "title": "C + Libcurl",
+                        "content": "CURL *hnd = curl_easy_init();\n\ncurl_easy_setopt(hnd, CURLOPT_CUSTOMREQUEST, \"GET\");\ncurl_easy_setopt(hnd, CURLOPT_URL, \"https://1forge.com/forex-quotes/symbols\");\n\nCURLcode ret = curl_easy_perform(hnd);"
+                    },
+                    {
+                        "id": "javascript_xhr",
+                        "title": "Javascript + Xhr",
+                        "content": "const data = null;\n\nconst xhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\nxhr.open(\"GET\", \"https://1forge.com/forex-quotes/symbols\");\n\nxhr.send(data);"
+                    }
+                ]
+            }
+        }
+    }
+}

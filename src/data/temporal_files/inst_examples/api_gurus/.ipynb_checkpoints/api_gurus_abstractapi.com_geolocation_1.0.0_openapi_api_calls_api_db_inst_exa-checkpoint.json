@@ -1,0 +1,11 @@
+{
+    "list": [
+        {
+            "API name": "IP geolocation API",
+            "functionality": "",
+            "description": "Retrieve the location of an IP address",
+            "endpoint": "",
+            "output": "I need to retrieve the location of an IP address with the IP geolocation API. Please help me with that."
+        }
+    ]
+}

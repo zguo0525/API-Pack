@@ -1,0 +1,52 @@
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_curl
+Directory: cleaned_curl
+Total JSON files: 1161
+Total items in JSON files: 114797
+------------------------------------------------
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_go
+Directory: cleaned_go
+Total JSON files: 287
+Total items in JSON files: 113131
+------------------------------------------------
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_java
+Directory: cleaned_java
+Total JSON files: 284
+Total items in JSON files: 112225
+------------------------------------------------
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_node
+Directory: cleaned_node
+Total JSON files: 284
+Total items in JSON files: 112242
+------------------------------------------------
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_python
+Directory: cleaned_python
+Total JSON files: 286
+Total items in JSON files: 112893
+------------------------------------------------
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_ruby
+Directory: cleaned_ruby
+Total JSON files: 285
+Total items in JSON files: 112394
+------------------------------------------------
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_php
+Directory: cleaned_php
+Total JSON files: 284
+Total items in JSON files: 112131
+------------------------------------------------
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_swift
+Directory: cleaned_swift
+Total JSON files: 285
+Total items in JSON files: 112369
+------------------------------------------------
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_libcurl
+Directory: cleaned_libcurl
+Total JSON files: 287
+Total items in JSON files: 113195
+------------------------------------------------
+Files directory: ./data/temporal_files/instruction_files_cleaned/cleaned_javascript
+Directory: cleaned_javascript
+Total JSON files: 287
+Total items in JSON files: 113222
+------------------------------------------------
+Total API calls: 1128599
+--- Report saved in: ./data/temporal_files/report_TO_20240111123625.csv ---

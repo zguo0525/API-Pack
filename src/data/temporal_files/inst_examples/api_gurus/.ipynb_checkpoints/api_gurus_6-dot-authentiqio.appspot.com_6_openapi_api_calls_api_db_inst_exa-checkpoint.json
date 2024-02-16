@@ -1,0 +1,32 @@
+{
+    "list": [
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "this is a scope confirmation",
+            "endpoint": "sign_confirm",
+            "output": "Please give me an example of how to use the endpoint sign_confirm from Authentiq API."
+        },
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+            "endpoint": "key_revoke_nosecret",
+            "output": "I need to revoke an authentiq id using email & phone. Please help me with that."
+        },
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "Revoke an Authentiq ID using email & phone.\n\nIf called with `email` and `phone` only, a verification code \nwill be sent by email. Do a second call adding `code` to \ncomplete the revocation.\n",
+            "endpoint": "key_revoke_nosecret",
+            "output": "Please give me an example of how to use the endpoint key_revoke_nosecret from Authentiq API."
+        },
+        {
+            "API name": "Authentiq API",
+            "functionality": "",
+            "description": "get the status / current content of a verification job",
+            "endpoint": "sign_retrieve",
+            "output": "Please give me an example of how to use the endpoint sign_retrieve from Authentiq API."
+        }
+    ]
+}
