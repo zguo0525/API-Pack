@@ -18,10 +18,8 @@ API Pack is rooted in the goal of improving the interaction between large langua
 To get started with API Pack, clone this repository using the following command:
 
 ```bash
-git clone https://github.com/{anonymous url}
+git clone https://github.com/zguo0525/API-Pack
 ```
-
-Please replace `{anonymous url}` with the actual URL of this repository.
 
 ### Installation
 
