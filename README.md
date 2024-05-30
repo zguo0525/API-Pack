@@ -1,6 +1,6 @@
 # API Pack A Massive Multi-Programming Language Dataset for API Call Generation
 
-This is the repository for [[API Pack A Massive Multi-Programming Language Dataset for API Call Generation]](https://github.com/zguo0525/API-Pack)
+This is the repository for [API Pack A Massive Multi-Programming Language Dataset for API Call Generation](https://github.com/zguo0525/API-Pack)
 
 ## Overview
 
