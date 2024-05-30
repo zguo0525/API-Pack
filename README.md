@@ -2,50 +2,34 @@
 
 This is the repository with dataset, code, and models for the paper [API Pack A Massive Multi-Programming Language Dataset for API Call Generation](https://github.com/zguo0525/API-Pack)
 
-## Overview
+## Dataset Summary
 
-API Pack is rooted in the goal of improving the interaction between large language models and various programming interfaces. By providing a vast collection of instruction-API call pairs, API Pack facilitates a more nuanced understanding and generation of API calls, a critical aspect of programming and software development.
+API Pack is a large-scale, multi-programming language dataset containing over 1 million instances across 10 programming languages for API call generation and intent detection. Its key features include multilinguality, scale, and a wide range of real-world APIs and use cases, enabling the assessment of cross-lingual skill transfer. Evaluation experiments demonstrated that CodeLlama-13B, fine-tuned with only 20,000 Python instances from API Pack, outperformed GPT-3.5 and GPT-4 in generating API calls for entirely new APIs, highlighting the dataset's effectiveness in improving the API call generation capabilities of large language models.
 
-## Key Features
+## Dataset Access
 
-- **Extensive Dataset:** Over one million instruction-API call pairs, catering to a wide range of API call generation scenarios.
-- **Multilingual Support:** Designed to advance cross-lingual API call generation capabilities without the need for extensive language-specific data.
-- **Proven Efficacy:** Experiments demonstrate that fine-tuning models with API Pack significantly enhances their performance in generating unseen API calls. Fine-tuning CodeLlama-13B on just 20,000 Python instances results in over 10% and 5% higher accuracy compared to GPT-3.5 and GPT-4, respectively.
-- **Improved Generalization:** Scaling the training process to 100,000 examples further boosts the models' ability to generalize to new APIs not encountered during training.
-
-## Getting Started
-
-To get started with API Pack, clone this repository using the following command:
-
-```bash
-git clone https://github.com/zguo0525/API-Pack
-```
-
-### Installation
-
-After cloning the repository, navigate to the API Pack directory and install the required dependencies:
-
-```bash
-cd API-Pack
-pip install -r requirements.txt
-```
-
-### Usage
-
-Refer to the documentation and example scripts provided in the repository to understand how to utilize the dataset and fine-tuned models for your API call generation tasks.
-
-## Experiments and Results
-
-Our extensive experiments underline the effectiveness of API Pack in enhancing large language models' performance in API call generation. Detailed results and analysis are available in the `experiments` directory.
-
-## Contribution
-
-Contributions to API Pack are welcome! Whether it's extending the dataset, improving the models, or refining the documentation, your input is valuable. Please refer to the `CONTRIBUTING.md` file for more details on how to contribute.
+## Dataset Structure
 
 ## License
 
-This project is released under the MIT License. See the `LICENSE` file for more details.
+API PAck dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License. You are free to share and adapt the material under the terms that you must give appropriate credit, provide a link to the license, and indicate if changes were made.
+The code under this repo is licensed under an MIT License.
 
-## Contact
+## Disclaimer
 
-For any inquiries or further discussion related to API Pack, please open an issue on this repository.
+This dataset was collected and released solely for research purposes to improve open-source large language models' API call generation capabilities. The authors are strongly against any potentially harmful use of the data or technology by any party.
+
+## Citation
+
+If you find our dataset useful, please consider citing the paper:
+
+```
+@misc{guo2024api,
+      title={API Pack: A Massive Multilingual Dataset for API Call Generation}, 
+      author={Zhen Guo and Adriana Meza Soria and Wei Sun and Yikang Shen and Rameswar Panda},
+      year={2024},
+      eprint={2402.09615},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
