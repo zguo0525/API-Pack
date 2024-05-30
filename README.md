@@ -27,7 +27,7 @@ Each instance in the API Pack dataset follows the example structure below:
         "domain": [],
         "path": "/getbycat/{category}"
     },
-    "instruction": "I'd be happy to help you find recipes based on a specific category using the Food-Cooking Recipe-API. Could you please provide the name or ID of the desired category to get a list of applicable recipes?",
+    "instruction": "Could you please provide the name or ID of the desired category to get a list of applicable recipes?",
     "instruction_test": "Could you kindly guide me on how to fetch a list of recipes within a specific category using the Food-Cooking Recipe-API?",
     "input": "",
     "output": "**domain**:[]\n**api_call**:curl --request GET \\\n  --url 'https//cooking-recipe2.p.rapidapi.com/getbycat/%7Bcategory%7D?category=SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Host: SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Key: SOME_STRING_VALUE'\n**api_provider**:\n**lang**:cURL",
