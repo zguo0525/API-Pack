@@ -1,0 +1,90 @@
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_curl <<test data>>: total_testing_cleaned_curl_level_1.json.json
+Number of testing APIs: 55
+Overall Endpoint Match Accuracy: 0.453
+Overall API Call Match Accuracy: 0.340
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_curl <<test data>>: total_testing_cleaned_curl_level_2.json.json
+Number of testing APIs: 886
+Overall Endpoint Match Accuracy: 0.336
+Overall API Call Match Accuracy: 0.274
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_curl <<test data>>: total_testing_cleaned_curl_level_3.json.json
+Number of testing APIs: 69
+Overall Endpoint Match Accuracy: 0.302
+Overall API Call Match Accuracy: 0.258
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_curl <<test data>>: total_testing_cleaned_curl_level_1_retrieval_IC_3.json.json
+Number of testing APIs: 55
+Overall Endpoint Match Accuracy: 0.737
+Overall API Call Match Accuracy: 0.638
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_curl <<test data>>: total_testing_cleaned_curl_level_2_retrieval_IC_3.json.json
+Number of testing APIs: 886
+Overall Endpoint Match Accuracy: 0.661
+Overall API Call Match Accuracy: 0.563
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_curl <<test data>>: total_testing_cleaned_curl_level_3_retrieval_IC_3.json.json
+Number of testing APIs: 69
+Overall Endpoint Match Accuracy: 0.750
+Overall API Call Match Accuracy: 0.675
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_python <<test data>>: total_testing_cleaned_python_level_1.json.json
+Number of testing APIs: 54
+Overall Endpoint Match Accuracy: 0.144
+Overall API Call Match Accuracy: 0.100
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_python <<test data>>: total_testing_cleaned_python_level_2.json.json
+Number of testing APIs: 900
+Overall Endpoint Match Accuracy: 0.182
+Overall API Call Match Accuracy: 0.144
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_python <<test data>>: total_testing_cleaned_python_level_3.json.json
+Number of testing APIs: 116
+Overall Endpoint Match Accuracy: 0.204
+Overall API Call Match Accuracy: 0.144
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_python <<test data>>: total_testing_cleaned_python_level_1_retrieval_IC_3.json.json
+Number of testing APIs: 54
+Overall Endpoint Match Accuracy: 0.655
+Overall API Call Match Accuracy: 0.579
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_python <<test data>>: total_testing_cleaned_python_level_2_retrieval_IC_3.json.json
+Number of testing APIs: 900
+Overall Endpoint Match Accuracy: 0.570
+Overall API Call Match Accuracy: 0.508
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_python <<test data>>: total_testing_cleaned_python_level_3_retrieval_IC_3.json.json
+Number of testing APIs: 116
+Overall Endpoint Match Accuracy: 0.598
+Overall API Call Match Accuracy: 0.526
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_java <<test data>>: total_testing_cleaned_java_level_1.json.json
+Number of testing APIs: 56
+Overall Endpoint Match Accuracy: 0.306
+Overall API Call Match Accuracy: 0.217
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_java <<test data>>: total_testing_cleaned_java_level_2.json.json
+Number of testing APIs: 904
+Overall Endpoint Match Accuracy: 0.283
+Overall API Call Match Accuracy: 0.216
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_java <<test data>>: total_testing_cleaned_java_level_3.json.json
+Number of testing APIs: 115
+Overall Endpoint Match Accuracy: 0.286
+Overall API Call Match Accuracy: 0.233
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_java <<test data>>: total_testing_cleaned_java_level_1_retrieval_IC_3.json.json
+Number of testing APIs: 56
+Overall Endpoint Match Accuracy: 0.684
+Overall API Call Match Accuracy: 0.595
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_java <<test data>>: total_testing_cleaned_java_level_2_retrieval_IC_3.json.json
+Number of testing APIs: 904
+Overall Endpoint Match Accuracy: 0.636
+Overall API Call Match Accuracy: 0.570
+-------------------------------------------------
+<<model>>: CodeLlama-13b-hf <<train data>>: cleaned_sub_combined/tokenized_cleaned_sub_combined_data_210328/cleaned_java <<test data>>: total_testing_cleaned_java_level_3_retrieval_IC_3.json.json
+Number of testing APIs: 115
+Overall Endpoint Match Accuracy: 0.680
+Overall API Call Match Accuracy: 0.610
