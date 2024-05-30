@@ -12,6 +12,46 @@ The dataset in JSON format is hosted on [Huggingface](https://huggingface.co/dat
 
 ## Dataset Structure
 
+```json
+
+{
+
+    "api_name": "Food-Cooking Recipe-API",
+
+    "api_description": "Food-Cooking Recipe-API",
+
+    "api_call_data": {
+
+        "api_call": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"http://undefinedhttps//cooking-recipe2.p.rapidapi.com/getbycat/%7Bcategory%7D?category=SOME_STRING_VALUE\"\n\n\treq,  := http.NewRequest(\"GET\", url, nil)\n\n\treq.Header.Add(\"X-RapidAPI-Key\", \"SOMESTRING_VALUE\")\n\treq.Header.Add(\"X-RapidAPI-Host\", \"SOME_STRING_VALUE\")\n\n\tres,  := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody,  := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}",
+
+        "lang": "go",
+
+        "functionality": "getrecipebycat",
+
+        "api_arguments": {},
+
+        "description": "Return specific list of recipes by category which will be pass",
+
+        "domain": [],
+
+        "path": "/getbycat/{category}"
+
+    },
+
+    "instruction": "Could you guide me on how to fetch a list of recipes from the Food-Cooking Recipe-API for a specific category?",
+
+    "instruction_test": "Could you guide me on how to obtain a list of recipes belonging to a particular category using the Food-Cooking Recipe-API?",
+
+    "input": "",
+
+    "output": "**domain**:[]\n**api_call**:package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n\t\"io/ioutil\"\n)\n\nfunc main() {\n\n\turl := \"http://undefinedhttps//cooking-recipe2.p.rapidapi.com/getbycat/%7Bcategory%7D?category=SOME_STRING_VALUE\"\n\n\treq,  := http.NewRequest(\"GET\", url, nil)\n\n\treq.Header.Add(\"X-RapidAPI-Key\", \"SOMESTRING_VALUE\")\n\treq.Header.Add(\"X-RapidAPI-Host\", \"SOME_STRING_VALUE\")\n\n\tres,  := http.DefaultClient.Do(req)\n\n\tdefer res.Body.Close()\n\tbody,  := ioutil.ReadAll(res.Body)\n\n\tfmt.Println(res)\n\tfmt.Println(string(body))\n\n}\n**api_provider**:\n**lang**:go",
+
+    "unique_id": "Food-Cooking-Recipe-API.json_0"
+
+}
+
+```
+
 - `api_name` (str): Name of the API
 - `api_description` (str): Description of the API
 - `api_call_data` (dict): Data related to the API call
