@@ -13,26 +13,24 @@ The dataset in JSON format is hosted on [Huggingface](https://huggingface.co/dat
 ## Dataset Structure
 
 ```json
-
-    {
-        "api_name": "Food-Cooking Recipe-API",
-        "api_description": "Food-Cooking Recipe-API",
-        "api_call_data": {
-            "api_call": "curl --request GET \\\n  --url 'https//cooking-recipe2.p.rapidapi.com/getbycat/%7Bcategory%7D?category=SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Host: SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Key: SOME_STRING_VALUE'",
-            "lang": "cURL",
-            "functionality": "getrecipebycat",
-            "api_arguments": {},
-            "description": "Return specific list of recipes by category which will be pass",
-            "domain": [],
-            "path": "/getbycat/{category}"
-        },
-        "instruction": "I'd be happy to help you find recipes based on a specific category using the Food-Cooking Recipe-API. Could you please provide the name or ID of the desired category to get a list of applicable recipes?",
-        "instruction_test": "Could you kindly guide me on how to fetch a list of recipes within a specific category using the Food-Cooking Recipe-API?",
-        "input": "",
-        "output": "**domain**:[]\n**api_call**:curl --request GET \\\n  --url 'https//cooking-recipe2.p.rapidapi.com/getbycat/%7Bcategory%7D?category=SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Host: SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Key: SOME_STRING_VALUE'\n**api_provider**:\n**lang**:cURL",
-        "unique_id": "Food-Cooking-Recipe-API.json_0"
+{
+    "api_name": "Food-Cooking Recipe-API",
+    "api_description": "Food-Cooking Recipe-API",
+    "api_call_data": {
+        "api_call": "curl --request GET \\\n  --url 'https//cooking-recipe2.p.rapidapi.com/getbycat/%7Bcategory%7D?category=SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Host: SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Key: SOME_STRING_VALUE'",
+        "lang": "cURL",
+        "functionality": "getrecipebycat",
+        "api_arguments": {},
+        "description": "Return specific list of recipes by category which will be pass",
+        "domain": [],
+        "path": "/getbycat/{category}"
     },
-
+    "instruction": "I'd be happy to help you find recipes based on a specific category using the Food-Cooking Recipe-API. Could you please provide the name or ID of the desired category to get a list of applicable recipes?",
+    "instruction_test": "Could you kindly guide me on how to fetch a list of recipes within a specific category using the Food-Cooking Recipe-API?",
+    "input": "",
+    "output": "**domain**:[]\n**api_call**:curl --request GET \\\n  --url 'https//cooking-recipe2.p.rapidapi.com/getbycat/%7Bcategory%7D?category=SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Host: SOME_STRING_VALUE' \\\n  --header 'X-RapidAPI-Key: SOME_STRING_VALUE'\n**api_provider**:\n**lang**:cURL",
+    "unique_id": "Food-Cooking-Recipe-API.json_0"
+},
 ```
 
 - `api_name` (str): Name of the API
