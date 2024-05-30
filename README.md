@@ -12,6 +12,8 @@ The dataset in JSON format is hosted on [Huggingface](https://huggingface.co/dat
 
 ## Dataset Structure
 
+Each instance in the API Pack dataset follows the example structure below:
+
 ```json
 {
     "api_name": "Food-Cooking Recipe-API",
