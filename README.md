@@ -8,6 +8,8 @@ API Pack is a large-scale, multi-programming language dataset containing over 1 
 
 ## Dataset Access
 
+The dataset in JSON format is hosted on [Huggingface](https://huggingface.co/datasets/zguo0525/API-Pack).
+
 ## Dataset Structure
 
 ## License
