@@ -12,7 +12,7 @@ API Pack is a large-scale, multi-programming language dataset containing over 1 
 
 ## License
 
-API PAck dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License. You are free to share and adapt the material under the terms that you must give appropriate credit, provide a link to the license, and indicate if changes were made.
+API Pack dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License. You are free to share and adapt the material under the terms that you must give appropriate credit, provide a link to the license, and indicate if changes were made.
 The code under this repo is licensed under an MIT License.
 
 ## Disclaimer
