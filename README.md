@@ -1,6 +1,6 @@
-# API Pack
+# API Pack A Massive Multi-Programming Language Dataset for API Call Generation
 
-Welcome to API Pack, a comprehensive multilingual dataset designed to significantly advance the API call generation capabilities of large language models. With over one million instruction-API call pairs, API Pack serves as a robust resource for researchers and developers aiming to enhance large language models' proficiency in both specific API call generation tasks and general coding abilities.
+This is the repository for [[API Pack A Massive Multi-Programming Language Dataset for API Call Generation]](https://github.com/zguo0525/API-Pack)
 
 ## Overview
 
