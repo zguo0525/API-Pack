@@ -12,6 +12,26 @@ The dataset in JSON format is hosted on [Huggingface](https://huggingface.co/dat
 
 ## Dataset Structure
 
+- `api_name` (str): Name of the API
+- `api_description` (str): Description of the API
+- `api_call_data` (dict): Data related to the API call
+  - `api_call` (str): API call code snippet
+  - `lang` (str): Programming language of the API call
+  - `functionality` (str): Functionality of the API call
+  - `api_arguments` (dict): Arguments for the API call (empty in this example)
+  - `description` (str): Description of the API call functionality
+  - `domain` (list): List of domains (empty in this example)
+  - `path` (str): API endpoint path
+- `instruction` (str): Instruction or query related to the API call
+- `instruction_test` (str): Rephrased or alternative instruction
+- `input` (str): Input data for the API call (empty in this example)
+- `output` (str): Expected output or response from the API call, including the following fields:
+  - `domain` (list): List of domains (empty in this example)
+  - `api_call` (str): API call code snippet
+  - `api_provider` (str): API provider (empty in this example)
+  - `lang` (str): Programming language of the API call
+- `unique_id` (str): Unique identifier for the API data entry
+
 ## License
 
 API Pack dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License. You are free to share and adapt the material under the terms that you must give appropriate credit, provide a link to the license, and indicate if changes were made.
