@@ -49,10 +49,10 @@ There are two options to collect [OpenAPI](https://www.openapis.org/) specificat
 ### Generate API calls
 While some specification files contain the code to call API endpoints, others do not. For the second scenario, generate the api calls for each edpoint by running ```step1-run-process.sh``` which calls the ```step1_generate_api_calls.js``` with the ```openapi-snippet``` library . 
 
-If the API file that you are going to parse contains the API call code, skip this step. Otherwise, visit https://github.com/ErikWittern/openapi-snippet, and follow the instructions to use ```openapi-snippet``` library or sourcecode to generate API calls for an OpenAPI specification file.
+If the API file that you are going to parse contains the API call code, skip this step. Otherwise, visit https://github.com/ErikWittern/openapi-snippet, and follow the instructions above to use ```openapi-snippet``` library or sourcecode to generate API calls for an OpenAPI specification file.
 
 ### How to run the scripts to build an API DB file?
-Run the script ```python step2_build_api_db.py``` to build the API DB file. This script takes as input the OpenAPI specification file of your preference and parses its content. The output file obtained out of this step contains the information of all API endpoints in the format:
+Run the script ```step2-run-process.sh``` which calls the ```python step2_build_api_db.py``` to build the API DB file. This script takes as input the OpenAPI specification file of your preference and parses its content. The output file obtained out of this step contains the information of all API endpoints in the format:
 
 ```json
     {
