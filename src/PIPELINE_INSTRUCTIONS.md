@@ -142,3 +142,5 @@ Run ```step3-1-run-process.sh```, ```step3-2-run-process.sh```, ```step3-3-run-p
 5) validate generated instructions
 
 ## Step 4: Apply Dataset Format
+
+Run ```step4-run-process.sh``` to apply the format for instruction fine-tuning.
