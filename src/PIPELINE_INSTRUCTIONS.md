@@ -11,7 +11,7 @@ The figures below introduce the processing pipeline at a high level.
 As a result of the process, two output files are generated per API:
 
 1. API DB. A file that contains the API calls and their associated metadata.
-2. API Dataset. A file that in addition to API calls and metadata, contains a natural language instruction in the format required for tuning.
+2. API Dataset. A file that in addition to API calls and metadata, includes a natural language instruction in the format required for tuning.
 
 The code snippet below shows the key components of a datapoint in the API dataset, *instruction* and *api call*:
 
@@ -26,7 +26,7 @@ Request request = new Request.Builder().url(\"https:///%3Cgdpsdomain%3E:%3Cport%
 
 Response response = client.newCall(request).execute();
 ```
-In the next sections, we explain each step of the pipeline in detail.
+In the next sections, we explain each pipeline step in detail.
 
 
 ## Step 0: Data Collection
@@ -44,10 +44,10 @@ There are two options to collect [OpenAPI](https://www.openapis.org/) specificat
 1. Manual. The OpenAPI specification file is downloaded from each API documentation website.
 2. Automatic. A crawler is used to search for links to specification files (links to files with JSON or YAML extension). An API Hub is used as the seed URL from which the crawling process begins (i.e., [APIs.gurus](https://apis.guru/)). The file extension, website domain, and other URL characteristics can be used as scope delimiters for web crawling.
 
-## Step 2: Build API DB
+## Step 1: Build API DB
 
 ### Generate API calls
-While some specification files contain the code to call API endpoints, others do not. For the second scenario, generate the api calls for each edpoint with the ```openapi-snippet``` library. 
+While some specification files contain the code to call API endpoints, others do not. For the second scenario, generate the api calls for each edpoint by running ```step1-run-process.sh``` which calls the ```step1_generate_api_calls.js``` with the ```openapi-snippet``` library . 
 
 If the API file that you are going to parse contains the API calls code, skip this step. Otherwise, visit https://github.com/ErikWittern/openapi-snippet, and follow the instructions to use ```openapi-snippet``` library or sourcecode to generete API calls for an OpenAPI specification file.
 
