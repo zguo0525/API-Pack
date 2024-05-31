@@ -134,5 +134,11 @@ def create_parser(source,api):
 ```
 ## Step 3: Generate Instructions
 
+Run ```step3-1-run-process.sh```, ```step3-2-run-process.sh```, ```step3-3-run-process.sh```, ```step3-4-run-process.sh```, ```step3-5-run-process.sh``` in sequences to 
+1) generate example seed instructions with template based approach
+2) filter examples
+3) rewrite the template based seed instructions with an LLM (Mistral-7B-Instruct)
+4) generate instructions with the seed instructions with an LLM
+5) validate generated instructions
 
 ## Step 4: Apply Dataset Format
