@@ -62,6 +62,10 @@ Each instance in the API Pack dataset follows the example structure below:
   - `lang` (str): Programming language of the API call
 - `unique_id` (str): Unique identifier for the API data entry
 
+## Data Processing Codebase
+
+Please refer to [INSTRUCTIONS.md](src/PIPELINE_INSTRUCTIONS.md) for details.
+
 ## Model Access
 
 The model fine-tuned with 1M instances from API-Pack dataset is hosted on [Huggingface](https://huggingface.co/zguo0525/API-Pack-Model). The base model is [CodeLlama-13b-hf](https://huggingface.co/codellama/CodeLlama-13b-hf), a custom commercial license for which is [available](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
