@@ -6,7 +6,7 @@ This is the repository with dataset, code, and models for the paper [API Pack A 
 
 API Pack is a large-scale, multi-programming language dataset containing over 1 million instances across 10 programming languages for API call generation and intent detection. Its key features include multilinguality, scale, and a wide range of real-world APIs and use cases, enabling the assessment of cross-lingual skill transfer. Evaluation experiments demonstrated that CodeLlama-13B, fine-tuned with only 20,000 Python instances from API Pack, outperformed GPT-3.5 and GPT-4 in generating API calls for entirely new APIs, highlighting the dataset's effectiveness in improving the API call generation capabilities of large language models.
 
-## Layout
+## Repo Layout
 
 ```
 ./plots   <- jupyter notebook to reproduce the figures in the paper
