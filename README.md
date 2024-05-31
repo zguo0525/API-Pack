@@ -64,7 +64,7 @@ Each instance in the API Pack dataset follows the example structure below:
 
 ## Model fine-tuned with 1M instances from API-Pack dataset
 
-The model is hosted on [Huggingface](https://huggingface.co/zguo0525/API-Pack-Model). The base model is based on [CodeLlama-13b-hf](https://huggingface.co/codellama/CodeLlama-13b-hf), a custom commercial license for which is available at: https://ai.meta.com/resources/models-and-libraries/llama-downloads/
+The model is hosted on [Huggingface](https://huggingface.co/zguo0525/API-Pack-Model). The base model is based on [CodeLlama-13b-hf](https://huggingface.co/codellama/CodeLlama-13b-hf), a custom commercial license for which is [available](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
 
 ## License
 
