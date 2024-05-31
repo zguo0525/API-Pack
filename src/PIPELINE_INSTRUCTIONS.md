@@ -7,6 +7,7 @@ We follow a pipeline of six steps to build the *instruction-dataset* used for fi
 The figures below introduce the processing pipeline at a high level.
 
 ![image info](dataset-pipe-small.pdf)
+<embed src="dataset-pipe-small.pdf" type="application/pdf" width="100%" height="600px" />
 
 As a result of the process, two output files are generated per API:
 
