@@ -9,8 +9,8 @@ API Pack is a large-scale, multi-programming language dataset containing over 1 
 ## Layout
 
 ```
-plots/        <- jupyter notebook to reproduce the figures in the paper
-src/          <- source code for data processing pipeline, fine-tuning, and model evaluations
+plots/   <- jupyter notebook to reproduce the figures in the paper
+src/     <- source code for data processing pipeline, fine-tuning, and model evaluations
 ```
 
 ## Dataset Access
