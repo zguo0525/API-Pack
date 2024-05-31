@@ -29,13 +29,15 @@ Response response = client.newCall(request).execute();
 In the next sections, we explain each step of the pipeline in detail.
 
 
-## Step 1: Data Collection
+## Step 0: Data Collection
 It is up to API owners to make publicly available [OpenAPI](https://www.openapis.org/) specifications. If API owners want users to have access to their OpenAPI specification files, they most likely refernce them on their API documentation.
 
 To build our dataset, we used [OpenAPI](https://www.openapis.org/) specification files publicly available from two sources: 
 
 - [IBM API Hub](https://developer.ibm.com/apis/)
 - [APIs.gurus](https://apis.guru/).
+- [SwaggerHub](https://app.swaggerhub.com/search).
+- [RapidAPI](https://rapidapi.com/categories).
 
 ### Collection of OpenAPI specification files
 There are two options to collect [OpenAPI](https://www.openapis.org/) specification files:
