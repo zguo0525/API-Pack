@@ -133,62 +133,6 @@ def create_parser(source,api):
     return parser
 ```
 ## Step 3: Generate Instructions
-To create synthetic instructions for each endpoint, we task a LLM with generating an instruciton prompt based on the API metadata. We use three metadata fields:
 
-1. Functionality: a short description that summarizes the functionality of an endpoind.
-2. Description: a longer text that describes how each endpoint works. This description is more verbose that *functionality*, and sometimes it is not present (it is empty) in the API specification file.
-3. Endpoint: the name of the endpoint (function) in the API.
 
-We use the [IBM Generative AI SDK](https://github.com/IBM/ibm-generative-ai) to programmatically generate text (instructions) with pre-trained models hosted at IBM models hub. For this task, we have specifically used FLAN-UL2 (20B) pre-trained model. Once the instruction text has been generated, we concatenante the programming language for each datapoint to the instruction. Language information is also part of the API metadata.
-
-### How to run the script to generate instructions?
-Run the script ```python step3_instructions_gen.py``` to generate instructions for an API.
-
-Use the command below to run the script. Note this example only shows required arguments (```--prompt_examples```, ``` --api_db_file```, and ```--instructions_output_file```):
-
-```bash
-python step3_instructions_gen.py --api_db_file <name_assigned_to_api_db>.json --prompt_examples <api_instruction_and_examples>.json --instructions_temp_file <name_assigned_to_instructions>.json
-```
-#### Key parameters
-- **api_db_file** this is the *API DB* file generated as a result of completing [Step 2](#step-2-build-api-db).
-- **prompt_examples** is a file that you must create manually by following the schema bellow. Note that you can copy-paste the ```instruction``` field (this will be the prompt) into your file as this is the same for all APIs. Then, select at least three datapoints to use as in-context examples from the *API DB* file. Copy ```functionality```, ```description```, and ```endpoint``` fields directly from this file. Finally, add a *human-generated* instruction that shows what each endpoint to be used as in-context example can do.
-```json
-{
-    "instruction": "Given the functionality, description, and endpoint of an API, generate a task for which this API would be useful.\n\nYou should make the task concrete by replacing general concepts with more specific concepts.\nYou should try your best not to make the task become verbose, the task can only be 20 to 40 words long.\nThe API's functionality should not be exactly equal to the task generated.\nOnly include the API endpoint in the output to ask how to use it.",
-    "list": [
-        {"functionality": "<example functionality text>", "description": "<example description text>", "endpoint":"<example endpoint name>", "output": "<human-generated example instruciton for the endpoint>"},
-        // <Add more examples here>
-    ]
-}
-```
-- **instructions_temp_file** is the name of the temporal file that will be generated as output of completing this processing step.
-
-#### Other parameters
-You can also explicitly define the path of *template* and *output* directories as well as file names for standard templates required along the process by explicitly including these arguments in your command. The command below shows how to do it.
-
-```bash
-python step3_instructions_gen.py --api_db_file <name_assigned_to_api_db>.json --prompt_examples <api_instruction_and_examples>.json --instructions_temp_file <name_assigned_to_instructions>.json --templates_dir ./data/templates --input_template input_template.txt --prompt_template prompt_template.txt --refined_prompt_template refined_prompt_template.txt --inpud_dir ./data/output
-```
-By default all templates and temporal files generated are respectively placed at ```./data/templates``` and ```./data/output```
-
-Running this script will generate a temporal file with a similar structure to the *API DB* file, but with two new attributes, **instruction** and **refined_instruction**.
-
-```json
-    {
-        // Attributes generated during Step 2 go here.
-        "instruction": "",
-        "refined_instruction": ""
-    }
-```
-## Step 4: Generate API Call Domain
-TBD
-
-## Step 5: Apply Format
-Once the dataset has been integrated by following the previous steps, we re-format the dataset as the fine tuning pipeline requiers. This format is inspired on [the Gorilla project](https://gorilla.cs.berkeley.edu/).
-
-### How to run the script?
-Run the script ```python step5_formatting.py``` to apply the format required by the training pipeline to the dataset. Note this example only shows  arguments that are required (```--instructions_temp_file``` and ``` --output_file```):
-
-```bash
-python step5_formatting.py --instructions_temp_file <name_assigned_to_instructions>.json --output_file <name_assigned_to_final>.json
-```
+## Step 4: Apply Dataset Format
