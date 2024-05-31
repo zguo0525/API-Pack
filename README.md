@@ -62,6 +62,10 @@ Each instance in the API Pack dataset follows the example structure below:
   - `lang` (str): Programming language of the API call
 - `unique_id` (str): Unique identifier for the API data entry
 
+## Model fine-tuned with 1M instances from API-Pack dataset
+
+The model is hosted on [Huggingface](https://huggingface.co/zguo0525/API-Pack-Model). The base model is based on [CodeLlama-13b-hf](https://huggingface.co/codellama/CodeLlama-13b-hf), a custom commercial license for which is available at: https://ai.meta.com/resources/models-and-libraries/llama-downloads/
+
 ## License
 
 API Pack dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License. You are free to share and adapt the material under the terms that you must give appropriate credit, provide a link to the license, and indicate if changes were made.
