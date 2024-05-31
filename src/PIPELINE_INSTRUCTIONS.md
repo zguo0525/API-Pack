@@ -1,5 +1,5 @@
 # Processing Pipeline
-We follow a pipeline of six steps to build the *instruction-dataset* used for fine-tuning. At the core, this processing pipeline extracts information from [OpenAPI](https://www.openapis.org/) specification files. Using [OpenAPI](https://www.openapis.org/) files as datasource brings two important advantages over other methods to create instruction datasets (e.g., manual creation, mining code repositories, using Large Language Models):
+We follow a pipeline of 4 steps (excluding data collection) to build the *instruction-dataset* used for fine-tuning. At the core, this processing pipeline extracts information from [OpenAPI](https://www.openapis.org/) specification files. Using [OpenAPI](https://www.openapis.org/) files as datasource brings two important advantages over other methods to create instruction datasets (e.g., manual creation, mining code repositories, using Large Language Models):
 
 - The relationship between instruction and api call can be automatically distilled. No manual work to create it is needed.
 - The API call (code) is reliable enough as a probabilistic method (i.e., Large Language Model) is not used to generate it.
