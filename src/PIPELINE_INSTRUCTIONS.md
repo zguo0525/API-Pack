@@ -1,8 +1,8 @@
 # Processing Pipeline
-We follow a pipeline of 4 steps (excluding data collection) to build the *instruction-dataset* used for fine-tuning. At the core, this processing pipeline extracts information from [OpenAPI](https://www.openapis.org/) specification files. Using [OpenAPI](https://www.openapis.org/) files as datasource brings two important advantages over other methods to create instruction datasets (e.g., manual creation, mining code repositories, using Large Language Models):
+We follow a pipeline of 4 steps (excluding data collection) to build the *instruction-dataset* used for fine-tuning. At the core, this processing pipeline extracts information from [OpenAPI](https://www.openapis.org/) specification files. Using [OpenAPI](https://www.openapis.org/) files as datasource brings two important advantages over other methods to create instruction datasets (e.g., manual creation, mining code repositories, using Large Language Models to create input-output pairs):
 
 - The relationship between instruction and api call can be automatically distilled. No manual work to create it is needed.
-- The API call (code) is reliable enough as a probabilistic method (i.e., Large Language Model) is not used to generate it.
+- As we do not use an LLM to generate the instruction's response, there is not risk of code errors due to hallucination.
 
 The figures below introduce the processing pipeline at a high level.
 
@@ -30,8 +30,6 @@ In the next sections, we explain each pipeline step in detail.
 
 
 ## Step 0: Data Collection
-It is up to API owners to make publicly available [OpenAPI](https://www.openapis.org/) specifications. If API owners want users to have access to their OpenAPI specification files, they most likely refernce them on their API documentation.
-
 To build our dataset, we used [OpenAPI](https://www.openapis.org/) specification files publicly available from four sources: 
 
 - [IBM API Hub](https://developer.ibm.com/apis/)
@@ -39,16 +37,10 @@ To build our dataset, we used [OpenAPI](https://www.openapis.org/) specification
 - [SwaggerHub](https://app.swaggerhub.com/search).
 - [RapidAPI](https://rapidapi.com/categories).
 
-### Collection of OpenAPI specification files
-There are two options to collect [OpenAPI](https://www.openapis.org/) specification files:
-1. Manual. The OpenAPI specification file is downloaded from each API documentation website.
-2. Automatic. A crawler is used to search for links to specification files (links to files with JSON or YAML extension). An API Hub is used as the seed URL from which the crawling process begins (i.e., [APIs.gurus](https://apis.guru/)). The file extension, website domain, and other URL characteristics can be used as scope delimiters for web crawling.
+It is up to API owners to make publicly available their [OpenAPI](https://www.openapis.org/) specifications. They typically upload them to an API Hub, or as part of their API documentation.
 
 ## Step 1: Generate API calls
-
-While some specification files contain the code to call API endpoints, others do not. For the second scenario, generate the api calls for each edpoint by running ```step1-run-process.sh``` which calls the ```step1_generate_api_calls.js``` with the ```openapi-snippet``` library . 
-
-If the API file that you are going to parse contains the API call code, skip this step. Otherwise, visit https://github.com/ErikWittern/openapi-snippet, and follow the instructions above to use ```openapi-snippet``` library or sourcecode to generate API calls for an OpenAPI specification file.
+Only few specification files contain API calls as code snippets. The common scenario is to only include the parts required to create an HTTP requet so that code snippets can be automatically generated. We generate api calls for OAS files without API call code snippets with ```openapi-snippet``` [library](https://github.com/ErikWittern/openapi-snippet). To replicate our API call automatic generation process please run ```step1-run-process.sh``` which internally calls ```step1_generate_api_calls.js```. You will need to install ```openapi-snippet``` to run this script, please visit [this](https://github.com/ErikWittern/openapi-snippet) repository for further instructions on how to install ```openapi-snippet```.
 
 ## Step 2: Build API DB
 Run the script ```step2-run-process.sh``` which calls the ```python step2_build_api_db.py``` to build the API DB file. This script takes as input the OpenAPI specification file of your preference and parses its content. The output file obtained out of this step contains the information of all API endpoints in the format:
@@ -87,7 +79,7 @@ python step2_build_api_db.py --input_file_name <name_of_api_file_including_api_c
 
 The respective default values for ```--input_dir``` and ```--output_dir``` arguments are `./data/input` and `./data/output`.
 
-### How to add a new parser for an API?
+<!-- ### How to add a new parser for an API?
 To add a new API parser you must complete two steps: 
 
 1. Create a new parser class in ```spec_file_parser.py```.
@@ -131,16 +123,16 @@ def create_parser(source,api):
         parser = COSParser() # COSParser is the class that you created and that inherits from OpenAPIParser
         parser.parse_data(source)
     return parser
-```
+``` -->
 ## Step 3: Generate Instructions
+Run ```step3-1-run-process.sh```, ```step3-2-run-process.sh```, ```step3-3-run-process.sh```, ```step3-4-run-process.sh```, and ```step3-5-run-process.sh``` in sequence to 
+1) Generate example seed instructions with template based approach
+2) Filter examples
+3) Rewrite the template based seed instructions with an LLM (Mistral-7B-Instruct)
+4) Generate instructions with the seed instructions with an LLM
+5) Validate generated instructions
 
-Run ```step3-1-run-process.sh```, ```step3-2-run-process.sh```, ```step3-3-run-process.sh```, ```step3-4-run-process.sh```, ```step3-5-run-process.sh``` in sequences to 
-1) generate example seed instructions with template based approach
-2) filter examples
-3) rewrite the template based seed instructions with an LLM (Mistral-7B-Instruct)
-4) generate instructions with the seed instructions with an LLM
-5) validate generated instructions
+To craft the prompts for instruction validation (last step) human annotators reviewed a sample of 605 instructions. Out of this revision, they distilled common error patterns in instructions. Please find the results of the human annotation process [here](/src/data/validation_data/human_validation_set_ibm.xlsx).
 
 ## Step 4: Apply Dataset Format
-
 Run ```step4-run-process.sh``` to apply the format for instruction fine-tuning.
