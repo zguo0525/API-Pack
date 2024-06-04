@@ -1,6 +1,6 @@
 # API Pack A Massive Multi-Programming Language Dataset for API Call Generation
 
-This is the repository with dataset, code, and models for the paper [API Pack A Massive Multi-Programming Language Dataset for API Call Generation](https://github.com/zguo0525/API-Pack)
+This is the repository with dataset, code, and models for the paper [API Pack A Massive Multi-Programming Language Dataset for API Call Generation](https://arxiv.org/abs/2402.09615)
 
 ## Dataset Summary
 
@@ -15,7 +15,7 @@ API Pack is a large-scale, multi-programming language dataset containing over 1 
 
 ## Dataset Access
 
-The dataset in JSON format is hosted on [Huggingface](https://huggingface.co/datasets/zguo0525/API-Pack), with each programming language as an individual file.
+The dataset in JSON format is hosted on [Huggingface](https://huggingface.co/datasets/apipack/API-Pack-Dataset), with each programming language as an individual file.
 
 ## Dataset Structure
 
@@ -68,7 +68,7 @@ Please refer to [INSTRUCTIONS.md](src/PIPELINE_INSTRUCTIONS.md) for details.
 
 ## Model Access
 
-The model fine-tuned with 1M instances from API-Pack dataset is hosted on [Huggingface](https://huggingface.co/zguo0525/API-Pack-Model). The base model is [CodeLlama-13b-hf](https://huggingface.co/codellama/CodeLlama-13b-hf), a custom commercial license for which is [available](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
+The model fine-tuned with 1M instances from API-Pack dataset is hosted on [Huggingface](https://huggingface.co/apipack/API-Pack-Model). The base model is [CodeLlama-13b-hf](https://huggingface.co/codellama/CodeLlama-13b-hf), a custom commercial license for which is [available](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
 
 ## License
 
