@@ -75,6 +75,21 @@ The model fine-tuned with 1M instances from API-Pack dataset is hosted on [Huggi
 API Pack dataset is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/). You are free to share and adapt the material under the terms that you must give appropriate credit, provide a link to the license, and indicate if changes were made.
 The code under this repo is licensed under an MIT License.
 
+While we have made efforts to track license information at the API Hub level (e.g., API-gurus uses a CC0-1.0 license), individual OAS files may have different licenses. We are working on resolving this issue and have included it in our future work agenda (Section 7 of our paper).
+
+## Requesting Data Removal
+
+To respect the rights of OAS file owners, we have established a protocol for data owners to request the removal of their files from our dataset. If you are a data owner and wish to have your files removed:
+
+1. Fork this repository
+2. Create a new branch for your removal request
+3. Add the details of the files you want removed to a new text file in the `removal_requests` directory. Name the file with your GitHub username (e.g., `removal_requests/yourusername.txt`)
+4. In the file, list the specific files or API information you want removed, one per line
+5. Create a pull request with your changes
+6. In the pull request description, please provide verification of your ownership of the data
+
+We will review all removal requests and process them as quickly as possible.
+
 ## Disclaimer
 
 This dataset was collected and released solely for research purposes to improve open-source large language models' API call generation capabilities. The authors are strongly against any potentially harmful use of the data or technology by any party.
