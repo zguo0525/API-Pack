@@ -30,7 +30,7 @@ Each instance in the API Pack dataset follows the example structure below:
         "lang": "cURL",
         "functionality": "getrecipebycat",
         "api_arguments": {},
-        "description": "Return specific list of recipes by category which will be pass",
+        "description": "Return specific list of recipes by category which will be passed",
         "domain": [],
         "path": "/getbycat/{category}"
     },
